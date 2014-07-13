@@ -1,0 +1,18 @@
+@import "stipe/manifest";
+@import "stipe/grid/extends";
+
+.form_control {
+  @include grid(4);
+
+  &:last-child {
+   @include grid(4.125, omega);
+  }
+  &:first-child {
+    @include grid(4.125, alpha);
+  }
+
+  & button[type=submit] {
+    display:block;
+    margin: 1.2em auto;
+  }
+}

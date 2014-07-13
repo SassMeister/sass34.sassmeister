@@ -1,0 +1,10 @@
+$include-html-classes: false;
+$include-html-tooltip-classes: true;
+
+$tooltip-bg: #000;
+$default-float: left;
+$primary-color: #444;
+$global-radius: emCalc(20);
+
+@import "foundation/components/global";
+@import "foundation/components/tooltips";

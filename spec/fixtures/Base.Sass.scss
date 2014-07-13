@@ -1,0 +1,21 @@
+@import 'base.sass/*';
+
+// You can use multi params
+$browser-supports: parse-rules('last 1 version', 'IE >= 8');
+
+// Or a list
+$rules: 'last 1 version', 'IE >= 8';
+$browser-supports: parse-rules($rules);
+
+// Then, you can:
+@if support-browser(Android) {
+  .foo {
+    @include ellipsis-overflow;
+  }
+}
+
+@if not support-browser(ie 8) {
+  .bar {
+    @include ellipsis-overflow;
+  }
+}

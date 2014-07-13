@@ -1,0 +1,5 @@
+@import "quotation-marks";
+
+.my-class {
+  @include localized-quotation-marks(en de);
+}

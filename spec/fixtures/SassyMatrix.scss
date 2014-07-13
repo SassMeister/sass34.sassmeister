@@ -1,0 +1,7 @@
+@import "matrix";
+
+$matrix: matrix(3, 3);
+
+.box {
+  @include display($matrix);
+}

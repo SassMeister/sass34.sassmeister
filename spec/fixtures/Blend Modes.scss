@@ -1,0 +1,5 @@
+@import "blend-modes";
+
+.multiply {
+    background-color: blend-multiply(#7FFFD4, #DEB887);
+}

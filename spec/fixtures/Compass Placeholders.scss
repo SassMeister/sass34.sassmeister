@@ -1,0 +1,10 @@
+@import "compass";
+@import "compass-placeholders";
+
+a.first-link {
+  @extend %hover-link;
+}
+
+a.second-link {
+  @extend %hover-link;
+}

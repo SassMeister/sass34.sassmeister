@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////
+// visbility compontent
+///////////////////////////////////////////////////////
+
+@mixin visbility($space: "")
+
+	.#{$space}dis-none,
+	%#{$space}dis-none
+		display: none
+
+	.#{$space}dis-inline,
+	%#{$space}dis-inline
+		display: inline
+
+	.#{$space}dis-inline-block,
+	%#{$space}dis-inline-block
+		display: inline-block
+
+	.#{$space}dis-block,
+	%#{$space}dis-block
+		display: block
+
+	.#{$space}dis-table,
+	%#{$space}dis-table
+		display: table
+		
+	.#{$space}dis-table-cell,
+	%#{$space}dis-table-cell
+		display: table-cell
+
+@mixin visuallyhidden($space: "")
+	
+	.#{$space}visuallyhidden,
+	%#{$space}visuallyhidden
+		width: 1px!important
+		height: 1px!important
+		padding: 0!important
+		margin: -1px!important
+		position: absolute!important
+		overflow: hidden!important
+		border: 0!important
+		clip: rect(0 0 0 0)!important
+
+@include visbility()
+@include visuallyhidden()
+
+@each $name in $bp-names
+	+media-query($name)
+		+visbility('#{$name}-')
+		+visuallyhidden('#{$name}-')
+
+// need palm for accessibility
+
++media-query-debug()
+	+visuallyhidden('palm-')

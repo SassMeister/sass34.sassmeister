@@ -1,0 +1,118 @@
+//////////////////////////////////////////////////////////////////
+// base styles
+//////////////////////////////////////////////////////////////////
+
+@if $ark-base == true
+
+	///////////////////////////////
+	// box sizing ftw!
+	///////////////////////////////
+
+	*
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box
+		box-sizing: border-box
+
+	///////////////////////////////
+	// same 'ol, same 'ol
+	///////////////////////////////
+
+	body,
+	div,
+	dl,
+	dt,
+	dd,
+	ul,
+	ol,
+	li,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	pre,
+	code,
+	form,
+	fieldset,
+	legend,
+	input,
+	textarea,
+	p,
+	blockquote,
+	th,
+	td
+		margin: 0
+		padding: 0
+
+	///////////////////////////////
+	// html & body
+	///////////////////////////////
+
+	html
+		font-size: 100%
+		overflow-y: scroll
+		min-height: 100%
+
+	body
+		line-height: $line-height-ratio
+		-webkit-font-smoothing: antialiased
+		font-smoothing: antialiased
+
+	///////////////////////////////
+	// default lists
+	///////////////////////////////	
+
+	ul,ol
+		list-style: none
+
+	///////////////////////////////
+	// default form styles
+	///////////////////////////////
+
+	input,
+	select,
+	textarea
+		max-width: 100%
+
+	///////////////////////////////
+	// images
+	///////////////////////////////
+
+	img,
+	audio,
+	video,
+	iframe
+		max-width: 100%
+		vertical-align: middle
+
+	img
+		display: inline-block	
+
+	///////////////////////////////
+	// headings
+	///////////////////////////////
+
+	h1,
+	%h1-size
+		+font-size($h1-size)
+
+	h2,
+	%h2-size
+		+font-size($h2-size)
+
+	h3,
+	%h3-size
+		+font-size($h3-size)
+
+	h4,
+	%h4-size
+		+font-size($h4-size)
+
+	h5,
+	%h5-size
+		+font-size($h5-size)
+
+	h6,
+	%h6-size
+		+font-size($h6-size)

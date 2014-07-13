@@ -1,0 +1,36 @@
+//////////////////////////////////////////////////////////////////
+// flag object
+//////////////////////////////////////////////////////////////////
+
+@if $use-flag == true
+	
+	.flag,
+	%flag
+		display: table
+		width: 100%
+
+	.flag__img,
+	.flag__body
+		display: table-cell
+		vertical-align: middle
+
+		.flag--top &
+			vertical-align: top
+
+		.flag--bottom &
+			vertical-align: bottom
+
+	.flag__img,
+	%flag__img
+		padding-right: $bsu
+
+		> img
+			display: block
+			max-width: none
+
+		.flag--rev &
+			padding-right: 0
+			padding-left: $bsu
+
+	.flag__body
+		width: 100%

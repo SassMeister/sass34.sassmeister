@@ -1,0 +1,6 @@
+@import "ceaser-easing";
+
+#box {
+    width: 500px;
+    @include ceaser-transition(width, 500ms, $easeInOutExpo, 1s);
+}

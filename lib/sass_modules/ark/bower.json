@@ -1,0 +1,16 @@
+{
+  "name": "ark",
+  "version": "0.0.1",
+  "homepage": "https://github.com/drewbolles/ark",
+  "authors": [
+    "Drew Bolles <drewbolles@gmail.com>"
+  ],
+  "description": "A Sass based toolkit for responsive web projects inspired by Inuit CSS",
+  "main": "_ark.sass",
+  "keywords": [
+    "sass",
+    "scss",
+    "inuit",
+    "css"
+  ]
+}

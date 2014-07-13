@@ -1,0 +1,5 @@
+@import "responsive-sass";
+
+.block {
+  @include mobile-landscape(960, 240, "/images/high-res.png");
+}

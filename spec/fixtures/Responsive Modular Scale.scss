@@ -1,0 +1,12 @@
+@import "modular-scale";
+@import "responsive-modular-scale";
+
+h1 {
+  @include rms(6);
+}
+h2 {
+  @include rms(5);
+}
+p {
+  @include rms(0);
+}

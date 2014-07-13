@@ -1,0 +1,5 @@
+@import "SassyCast";
+
+.test {
+  foo: to-string(#000); // "#333"
+}

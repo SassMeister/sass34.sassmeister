@@ -1,0 +1,8 @@
+@import "SassyStrings";
+
+$string: 'SassyStrings';
+$index: 2;
+
+.foo {
+  bar: char-at($string, $index);
+}

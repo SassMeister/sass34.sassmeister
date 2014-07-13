@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////
+// Grid - inspired by Inuit CSS
+///////////////////////////////////////////////////////
+
+.grid,
+%grid
+	margin-left: -$base-spacing-unit
+
+	&:after,
+	&:before
+		content: " "
+		display: table
+		clear: both
+
+.grid > .grid
+	margin-left: 0
+
+.grid__item,
+%grid__item
+	width: 100%
+	padding-left: $base-spacing-unit
+	float: left
+
+///////////////////////////////
+// grid modifiers, context, states
+///////////////////////////////
+
+// full grid
+
+.grid--full
+	margin-left: 0!important
+	
+	.grid__item
+		padding-left: 0!important			
+
+
+// is-inline. this context will utilitze in inline-block rather than float-based grid
+
+.grid__item
+	
+	.is-inline &
+		float: none
+		display: inline-block
+		vertical-align: middle
+
+	.grid--top &
+		vertical-align: top
+
+	.grid--bottom &
+		vertical-align: bottom		

@@ -1,0 +1,362 @@
+---
+Ark:
+  :bower: ark
+  :paths:
+  - ark
+  :version: 0.2.0
+  :import:
+  - ark/ark
+  :fingerprint: (ark|ark/*)
+  :homepage: https://github.com/drewbolles/ark
+Base.Sass:
+  :gem: base.sass
+  :version: 1.3.3
+  :import:
+  - base.sass/*
+  :fingerprint: base.sass
+  :homepage: https://github.com/jsw0528/base.sass
+Bitters:
+  :gem: bitters-compass
+  :version: 0.10.0
+  :import:
+  - bourbon/bourbon
+  - neat/neat
+  - bitters/bitters
+  :fingerprint: (bitters|bitters/*)
+  :homepage: https://github.com/jedfoster/bitters-compass
+Blend Modes:
+  :gem: compass-blend-modes
+  :version: 0.0.2
+  :import:
+  - blend-modes
+  :fingerprint: blend-mode*
+  :homepage: https://github.com/heygrady/scss-blend-modes
+Bootstrap Sass:
+  :gem: bootstrap-sass
+  :version: 3.2.0.0
+  :import:
+  - bootstrap
+  :fingerprint: (bootstrap|bootstrap/*)
+  :homepage: https://github.com/twbs/bootstrap-sass
+Bourbon:
+  :gem: bourbon-compass
+  :version: 4.0.2
+  :import:
+  - bourbon/bourbon
+  :fingerprint: (bourbon|bourbon/*)
+  :homepage: https://github.com/jedfoster/bourbon-compass
+Breakup:
+  :gem: breakup
+  :version: 0.2.1
+  :import:
+  - breakup
+  :fingerprint: breakup
+  :homepage: https://github.com/bpscott/breakup
+CSShake:
+  :bower: csshake
+  :paths:
+  - csshake/sass
+  :version: 44efe8f94a
+  :import:
+  - csshake
+  :fingerprint: csshake
+  :homepage: https://github.com/elrumordelaluz/csshake
+Ceasar Easing:
+  :gem: ceaser-easing
+  :version: '0.7'
+  :import:
+  - ceaser-easing
+  :fingerprint: ceaser-easing
+  :homepage: https://github.com/jhardy/compass-ceaser-easing
+Color Schemer:
+  :gem: color-schemer
+  :version: 0.2.8
+  :import:
+  - color-schemer
+  :fingerprint: color-schemer
+  :homepage: https://github.com/scottkellum/color-schemer
+Compass:
+  :gem: compass
+  :version: 1.0.0.alpha.20
+  :import:
+  - compass
+  :fingerprint: (compass|compass/*)
+  :homepage: http://compass-style.org
+Compass Inuit:
+  :gem: compass-inuit
+  :version: 5.0.2
+  :import:
+  - compass-inuit
+  :fingerprint: compass-inuit*
+  :homepage: http://github.com/stephenway/compass-intuit
+Compass Placeholders:
+  :gem: compass-placeholders
+  :version: 1.1.1
+  :import:
+  - compass
+  - compass-placeholders
+  :fingerprint: compass-placeholders
+  :homepage: ''
+Compass Slideshow:
+  :gem: css-slideshow
+  :version: 0.2.0
+  :import:
+  - compass
+  - css-slideshow
+  :fingerprint: css-slideshow
+  :homepage: http://www.oddbird.net/
+Fancy Buttons:
+  :gem: fancy-buttons
+  :version: 1.2.0
+  :import:
+  - fancy-buttons
+  :fingerprint: fancy-buttons
+  :homepage: http://github.com/imathis/fancy-buttons
+Fittext:
+  :gem: fittext
+  :version: 0.0.5
+  :import:
+  - fittext
+  :fingerprint: fittext
+  :homepage: http://www.bookcasey.com/fittext/
+Flint:
+  :gem: flint-gs
+  :version: 1.7.1
+  :import:
+  - flint
+  :fingerprint: flint
+  :homepage: https://github.com/ezekg/flint/
+Garnish:
+  :bower: garnish
+  :paths:
+  - garnish/src
+  :version: 0.2.1
+  :import:
+  - garnish
+  :fingerprint: garnish
+  :homepage: https://github.com/paulozoom/garnish
+Grid Coordinates:
+  :gem: grid-coordinates
+  :version: 1.2.0
+  :import:
+  - grid-coordinates
+  :fingerprint: grid-coordinates
+  :homepage: http://grid-coordinates.com/
+Guff:
+  :gem: guff-compass
+  :version: 1.0.0
+  :import:
+  - guff
+  :fingerprint: guff
+  :homepage: http://kenwheeler.github.io/guff/
+Harsh:
+  :gem: harsh
+  :version: 1.0.0
+  :import:
+  - harsh
+  :fingerprint: harsh
+  :homepage: http://www.bookcasey.com/harsh/
+MathSass:
+  :bower: mathsass
+  :paths:
+  - mathsass/dist
+  :version: 0.9.5
+  :import:
+  - math
+  :fingerprint: math
+  :homepage: http://github.com/terkel/mathsass
+Modular Scale:
+  :gem: modular-scale
+  :version: 2.0.5
+  :import:
+  - modular-scale
+  :fingerprint: modular-scale
+  :homepage: http://extension.com
+Neat:
+  :gem: neat-compass
+  :version: 1.6.0
+  :import:
+  - bourbon/bourbon
+  - neat/neat
+  :fingerprint: (neat|neat/*)
+  :homepage: https://github.com/jedfoster/neat-compass
+Normalize SCSS:
+  :gem: normalize-scss
+  :version: 3.0.0.alpha.2
+  :import:
+  - normalize-scss
+  :fingerprint: normalize-scss
+  :homepage: https://github.com/JohnAlbin/normalize-scss
+Photoshop Drop Shadow:
+  :gem: compass-photoshop-drop-shadow
+  :version: 0.0.1
+  :import:
+  - photoshop-drop-shadow
+  :fingerprint: photoshop-drop-shadow
+  :homepage: https://github.com/heygrady/compass-photoshop-drop-shadow
+Quotation Marks:
+  :gem: quotation-marks
+  :version: 0.1.1
+  :import:
+  - quotation-marks
+  :fingerprint: quotation-marks
+  :homepage: http://quotation-marks.org
+Responsive Calculator:
+  :gem: rwdcalc
+  :version: 0.0.2
+  :import:
+  - rwdcalc
+  :fingerprint: rwdcalc
+  :homepage: http://rwdcalc.com
+Responsive Modular Scale:
+  :gem: responsive-modular-scale
+  :version: 0.2.1
+  :import:
+  - modular-scale
+  - responsive-modular-scale
+  :fingerprint: responsive-modular-scale
+  :homepage: http://github.com/gakimball/responsive-modular-scale
+Responsive Sass:
+  :gem: responsive-sass
+  :version: 0.1.1
+  :import:
+  - responsive-sass
+  :fingerprint: responsive-sass
+  :homepage: http://ntreadway.github.com/responsive-sass/welcome
+Salsa:
+  :gem: salsa
+  :version: 0.0.1
+  :import:
+  - salsa
+  :fingerprint: salsa
+  :homepage: http://tsi.github.com/Salsa/
+Sassifaction:
+  :gem: Sassifaction
+  :version: 0.0.4
+  :import:
+  - Sassifaction
+  :fingerprint: Sassifaction
+  :homepage: https://github.com/sturobson/Sassifaction
+Sassy Buttons:
+  :gem: sassy-buttons
+  :version: 0.2.6
+  :import:
+  - sassy-buttons
+  :fingerprint: sassy-buttons
+  :homepage: http://www.jaredhardy.com/sassy-buttons
+Sassy Maps:
+  :gem: sassy-maps
+  :version: 0.4.0
+  :import:
+  - sassy-maps
+  :fingerprint: sassy-maps
+  :homepage: https://github.com/Snugug/Sassy-Maps
+Sassy Text Shadow:
+  :gem: sassy-text-shadow
+  :version: 0.0.4
+  :import:
+  - compass
+  - sassy-text-shadow
+  :fingerprint: sassy-text-shadow
+  :homepage: http://sassymothereffingtextshadow.com
+SassyBitwise:
+  :gem: SassyBitwise
+  :version: 1.1.2
+  :import:
+  - SassyBitwise
+  :fingerprint: SassyBitwise
+  :homepage: http://github.com/HugoGiraudel/SassyBitwise
+SassyCast:
+  :gem: SassyCast
+  :version: 1.0.0
+  :import:
+  - SassyCast
+  :fingerprint: SassyCast
+  :homepage: https://github.com/HugoGiraudel/SassyCast/
+SassyJSON:
+  :gem: SassyJSON
+  :version: 1.1.8
+  :import:
+  - SassyJSON
+  :fingerprint: SassyJSON
+  :homepage: https://github.com/HugoGiraudel/SassyJSON/
+SassyLists:
+  :gem: SassyLists
+  :version: 2.2.1
+  :import:
+  - SassyLists
+  :fingerprint: SassyLists
+  :homepage: http://sassylists.com/
+SassyMatrix:
+  :gem: SassyMatrix
+  :version: 1.0.1
+  :import:
+  - matrix
+  :fingerprint: matrix
+  :homepage: https://github.com/HugoGiraudel/SassyMatrix/
+SassySort:
+  :gem: SassySort
+  :version: 0.0.1
+  :import:
+  - SassySort
+  :fingerprint: SassySort
+  :homepage: https://github.com/HugoGiraudel/SassySort/
+SassyStrings:
+  :gem: SassyStrings
+  :version: 1.0.0
+  :import:
+  - SassyString
+  :fingerprint: SassyString
+  :homepage: https://github.com/HugoGiraudel/SassyStrings
+Scut:
+  :gem: scut
+  :version: 0.10.4
+  :import:
+  - scut
+  :fingerprint: scut
+  :homepage: http://davidtheclark.github.io/scut/
+Stipe:
+  :gem: stipe
+  :version: 0.0.6.4
+  :import:
+  - stipe/manifest
+  - stipe/grid/extends
+  :fingerprint: (stipe|stipe/*)
+  :homepage: https://github.com/Toadstool-Stipe/stipe
+Stitch:
+  :gem: stitch
+  :version: 0.1.4
+  :import:
+  - stitch
+  :fingerprint: stitch
+  :homepage: https://github.com/anthonyshort/stitch-css
+'True':
+  :gem: 'true'
+  :version: 0.2.0
+  :import:
+  - 'true'
+  :fingerprint: 'true'
+  :homepage: http://eric.andmeyer.com/true
+Typecsset:
+  :bower: typecsset
+  :paths:
+  - typecsset
+  :version: 0.3.0
+  :import:
+  - typecsset
+  :fingerprint: typecsset
+  :homepage: https://github.com/csswizardry/typecsset
+YIQ Color Contrast:
+  :gem: compass-yiq-color-contrast
+  :version: 1.1.1
+  :import:
+  - yiq-color-contrast
+  :fingerprint: yiq-color-contrast
+  :homepage: https://github.com/timhettler/compass-yiq-color-contrast
+Zen Grids:
+  :gem: zen-grids
+  :version: '1.4'
+  :import:
+  - zen
+  :fingerprint: (zen|zen-grids)
+  :homepage: http://zengrids.com

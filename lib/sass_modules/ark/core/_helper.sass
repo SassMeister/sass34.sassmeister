@@ -1,0 +1,77 @@
+///////////////////////////////////////////////////////
+// Helper classes
+///////////////////////////////////////////////////////
+
+///////////////////////////////
+// clearfix
+///////////////////////////////
+
+.cf,
+.clearfix,
+%cf
+	&:before,
+	&:after
+		content: " "
+		display: table
+		
+	&:after
+		clear: both
+
+///////////////////////////////
+// base font site
+///////////////////////////////
+
+%base-font-size
+	+font-size($base-font-size)
+
+///////////////////////////////
+// position
+///////////////////////////////
+
+%pos-rel
+	position: relative
+
+%pos-abs
+	position: absolute
+
+%pos-fixed
+	position: fixed
+
+///////////////////////////////
+// text align
+///////////////////////////////
+
+%text-left
+	text-align: left
+
+%text-right
+	text-align: right
+
+%text-center
+	text-align: center
+
+///////////////////////////////
+// floats
+///////////////////////////////
+
+%float-left
+	float: left
+
+%float-right
+	float: right
+
+%float-none
+	float: none
+
+////////////////////////////////
+// font weights
+////////////////////////////////
+
+%weight-light
+	font-weight: $weight-light
+
+%weight-normal
+	font-weight: $weight-normal
+
+%weight-semibold
+	font-weight: $weight-semibold		

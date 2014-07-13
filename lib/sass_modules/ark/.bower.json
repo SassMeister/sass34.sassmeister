@@ -1,0 +1,25 @@
+{
+  "name": "ark",
+  "version": "0.2.0",
+  "homepage": "https://github.com/drewbolles/ark",
+  "authors": [
+    "Drew Bolles <drewbolles@gmail.com>"
+  ],
+  "description": "A Sass based toolkit for responsive web projects inspired by Inuit CSS",
+  "main": "_ark.sass",
+  "keywords": [
+    "sass",
+    "scss",
+    "inuit",
+    "css"
+  ],
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "7fa68b0c5e4b0f79d889ccc57baf2987cf250e39"
+  },
+  "_source": "https://github.com/drewbolles/ark.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/drewbolles/ark.git"
+}

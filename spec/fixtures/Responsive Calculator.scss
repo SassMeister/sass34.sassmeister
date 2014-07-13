@@ -1,0 +1,5 @@
+@import "rwdcalc";
+
+.foo {
+  margin: rwdcalc(10 10px 13 1em, 960);
+}

@@ -1,0 +1,26 @@
+@import "breakpoint";
+
+// create $breakpoint variables like so
+// assume min-width (by default) if only a number
+
+$breakpoint-medium-width: 500px;
+$breakpoint-medium-width-em: 30em;
+
+.foo {
+  @include breakpoint($breakpoint-medium-width) {
+    content: 'medium widths';
+  }
+}
+.bar {
+  @include breakpoint($breakpoint-medium-width-em) {
+    content: 'medium widths measured in ems';
+  }
+}
+
+// You can use breakpoint without variables too.
+
+.rhcp {
+  @include breakpoint(30em 40em) {
+    content: 'between 30 and 40ems';
+  }
+}

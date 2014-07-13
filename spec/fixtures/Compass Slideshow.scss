@@ -1,0 +1,6 @@
+@import "compass";
+@import "css-slideshow";
+
+.slideshow {
+  @include slideshow;
+}

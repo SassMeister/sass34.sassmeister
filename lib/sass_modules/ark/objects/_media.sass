@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////////////////
+// media object
+//////////////////////////////////////////////////////////////////
+
+@if $use-media == true
+	
+	.media,
+	.media__body
+		overflow: hidden
+
+	.media__img
+		float: left
+		margin-right: $bsu
+
+		.media--rev &
+			float: right
+			margin-left: $bsu
+			margin-right: 0

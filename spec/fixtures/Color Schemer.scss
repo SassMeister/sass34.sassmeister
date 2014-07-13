@@ -1,0 +1,22 @@
+@import "color-schemer";
+
+$primary: cs-primary();
+$secondary: darken(cs-secondary(), 10%);
+$tertiary: cs-tertiary();
+$quadrary: cs-quadrary();
+
+.primary {
+  color: $primary
+}
+
+.secondary {
+  color: $secondary
+}
+
+.tertiary {
+  color: $tertiary
+}
+
+.quadrary {
+  color: $quadrary
+}

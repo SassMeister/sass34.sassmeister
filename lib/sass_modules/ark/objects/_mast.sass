@@ -1,0 +1,243 @@
+//////////////////////////////////////////////////////////////////
+// mast component
+//////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////
+// layout mast
+/////////////////////////////////////////
+
+@mixin layout-mast-setup($space: "")
+
+	// whole
+	.mast--#{$space}one-whole
+		.mast__stay
+			padding-bottom: 100%
+	
+	// halves
+	.mast--#{$space}one-half,
+	.mast--#{$space}two-fourths
+		.mast__stay
+			padding-bottom: 50%
+	
+	// thirds
+	.mast--#{$space}one-third
+		.mast__stay
+			padding-bottom: 33.333%
+
+	.mast--#{$space}two-thirds
+		.mast__stay
+			padding-bottom: 66.666%
+	
+	// fourths
+	.mast--#{$space}one-fourth
+		.mast__stay
+			padding-bottom: 25%
+			
+	.mast--#{$space}three-fourths
+		.mast__stay
+			padding-bottom: 75%
+
+/////////////////////////////////////////
+// invisible mast classes
+/////////////////////////////////////////
+
+@mixin mast-setup($space: "")
+
+	// whole
+	%mast--#{$space}one-whole
+		.mast__stay
+			padding-bottom: 100%
+	
+	// half
+	%mast--#{$space}one-half,
+	%mast--#{$space}two-fourths,
+	%mast--#{$space}three-sixths,
+	%mast--#{$space}four-eighths,
+	%mast--#{$space}five-tenths,
+	%mast--#{$space}six-twelfths
+		.mast__stay
+			padding-bottom: 50%
+	
+	// thirds
+	%mast--#{$space}one-third,
+	%mast--#{$space}two-sixths,
+	%mast--#{$space}three-ninths,
+	%mast--#{$space}four-twelfths
+		.mast__stay
+			padding-bottom: 33.333%
+
+	%mast--#{$space}two-thirds,
+	%mast--#{$space}four-sixths,
+	%mast--#{$space}six-ninths,
+	%mast--#{$space}eight-twelfths
+		.mast__stay
+			padding-bottom: 66.666%
+	
+	// fourths
+	%mast--#{$space}one-fourth,
+	%mast--#{$space}two-eighths,
+	%mast--#{$space}three-twelfths
+		.mast__stay
+			padding-bottom: 25%
+
+	%mast--#{$space}three-fourths,
+	%mast--#{$space}six-eighths,
+	%mast--#{$space}nine-twelfths
+		.mast__stay
+			padding-bottom: 75%
+
+	// fifths
+	%mast--#{$space}one-fifth,
+	%mast--#{$space}two-tenths
+		.mast__stay
+			padding-bottom: 20%
+
+	%mast--#{$space}two-fifths,
+	%mast--#{$space}four-tenths
+		.mast__stay
+			padding-bottom: 40%
+
+	%mast--#{$space}three-fifths,
+	%mast--#{$space}six-tenths
+		.mast__stay
+			padding-bottom: 60%
+
+	%mast--#{$space}four-fifths,
+	%mast--#{$space}eight-tenths
+		.mast__stay
+			padding-bottom: 80%
+	
+	// sixths
+	%mast--#{$space}one-sixth,
+	%mast--#{$space}two-twelfths
+		.mast__stay
+			padding-bottom: 16.666%
+
+	%mast--#{$space}five-sixths,
+	%mast--#{$space}ten-twelfths
+		.mast__stay
+			padding-bottom: 83.333%
+	
+	// sevenths
+	%mast--#{$space}one-seventh
+		.mast__stay
+			padding-bottom: 14.285%
+	%mast--#{$space}two-sevenths
+		.mast__stay
+			padding-bottom: 28.571%
+	%mast--#{$space}three-sevenths
+		.mast__stay
+			padding-bottom: 42.857%
+	%mast--#{$space}four-sevenths
+		.mast__stay
+			padding-bottom: 57.142%
+	%mast--#{$space}five-sevenths
+		.mast__stay
+			padding-bottom: 71.428%
+	%mast--#{$space}six-sevenths
+		.mast__stay
+			padding-bottom: 85.714%
+	
+	// eighths
+	%mast--#{$space}one-eighth
+		.mast__stay
+			padding-bottom: 12.5%
+	%mast--#{$space}three-eighths
+		.mast__stay
+			padding-bottom: 37.5%
+	%mast--#{$space}five-eighths
+		.mast__stay
+			padding-bottom: 62.5%
+	%mast--#{$space}seven-eighths
+		.mast__stay
+			padding-bottom: 87.5%
+	
+	// ninths
+	%mast--#{$space}one-ninth
+		.mast__stay
+			padding-bottom: 11.111%
+	%mast--#{$space}two-ninths
+		.mast__stay
+			padding-bottom: 22.222%
+	%mast--#{$space}four-ninths
+		.mast__stay
+			padding-bottom: 44.444%
+	%mast--#{$space}five-ninths
+		.mast__stay
+			padding-bottom: 55.555%
+	%mast--#{$space}seven-ninths
+		.mast__stay
+			padding-bottom: 77.777%
+	%mast--#{$space}eight-ninths
+		.mast__stay
+			padding-bottom: 88.888%
+	
+	// tenths
+	%mast--#{$space}one-tenth
+		.mast__stay
+			padding-bottom: 10%
+	%mast--#{$space}three-tenths
+		.mast__stay
+			padding-bottom: 30%
+	%mast--#{$space}seven-tenths
+		.mast__stay
+			padding-bottom: 70%
+	%mast--#{$space}nine-tenths
+		.mast__stay
+			padding-bottom: 90%
+	
+	// twelfths
+	%mast--#{$space}one-twelfth
+		.mast__stay
+			padding-bottom: 8.333%
+	%mast--#{$space}five-twelfths
+		.mast__stay
+			padding-bottom: 41.666%
+	%mast--#{$space}seven-twelfths
+		.mast__stay
+			padding-bottom: 58.333%
+	%mast--#{$space}eleven-twelfths
+		.mast__stay
+			padding-bottom: 91.666%
+
+@if $use-mast == true
+
+	.mast__stay
+		position: relative
+		height: 0
+
+	.mast__anchor
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+
+	.mast__text
+		height: 100% // in case text would like to be vertically centered
+
+	@include layout-mast-setup
+	@include mast-setup()
+
+	@each $name in $bp-names
+
+		[class*="mast--#{$name}"]
+
+			.mast__anchor
+				position: relative
+
+			.mast__stay
+				height: auto
+
+			+media-query($name)
+
+				.mast__anchor
+					position: absolute
+
+				.mast__stay
+					height: 0
+
+		+media-query($name)
+
+			+layout-mast-setup('#{$name}-')
+			+mast-setup('#{$name}-')

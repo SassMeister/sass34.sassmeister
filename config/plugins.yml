@@ -1,0 +1,306 @@
+MathSass:
+  :bower: mathsass
+  :import: 
+    - math
+  :fingerprint: math
+  :paths:
+    - mathsass/dist
+SassyBitwise:
+  :gem: SassyBitwise 
+  :import:
+    - SassyBitwise
+  :fingerprint: SassyBitwise
+Ark:
+  :bower: ark
+  :import:
+    - ark/ark
+  :fingerprint: (ark|ark/*)
+  :paths:
+    - ark
+Base.Sass:
+  :gem: base.sass
+  :import:
+    - base.sass/*
+  :fingerprint: base.sass
+Typecsset:
+  :bower: typecsset
+  :import:
+    - typecsset
+  :fingerprint: typecsset
+  :paths:
+    - typecsset
+CSShake:
+  :bower: csshake
+  :import: 
+    - csshake
+  :fingerprint: csshake
+  :paths:
+    - csshake/sass
+Garnish:
+  :bower: garnish
+  :import: 
+    - garnish
+  :fingerprint: garnish
+  :paths: 
+    - garnish/src
+Bitters:
+  :gem: bitters-compass
+  :import:
+    - bourbon/bourbon
+    - neat/neat
+    - bitters/bitters
+  :fingerprint: (bitters|bitters/*)
+Blend Modes:
+  :gem: compass-blend-modes
+  :import:
+    - blend-modes
+  :fingerprint: blend-mode*
+Bootstrap Sass:
+  :gem: bootstrap-sass
+  :import:
+    - bootstrap
+  :fingerprint: (bootstrap|bootstrap/*)
+Bourbon:
+  :gem: bourbon-compass
+  :import:
+    - bourbon/bourbon
+  :fingerprint: (bourbon|bourbon/*)
+# Breakpoint:
+#   :gem: breakpoint
+#   :import:
+#     - breakpoint
+#   :fingerprint: breakpoint
+# Breakpoint Slicer:
+#   :gem: breakpoint-slicer
+#   :import:
+#     - breakpoint-slicer
+#   :fingerprint: breakpoint-slicer
+Breakup:
+  :gem: breakup
+  :import:
+    - breakup
+  :fingerprint: breakup
+Ceasar Easing:
+  :gem: ceaser-easing
+  :import:
+    - ceaser-easing
+  :fingerprint: ceaser-easing
+Color Schemer:
+  :gem: color-schemer
+  :import:
+    - color-schemer
+  :fingerprint: color-schemer
+Compass:
+  :gem: compass
+  :import:
+    - compass
+  :fingerprint: (compass|compass/*)
+Compass Placeholders:
+  :gem: compass-placeholders
+  :import:
+    - compass
+    - compass-placeholders
+  :fingerprint: compass-placeholders
+Compass Slideshow:
+  :gem: css-slideshow
+  :import:
+    - compass
+    - css-slideshow
+  :fingerprint: css-slideshow
+Fancy Buttons:
+  :gem: fancy-buttons
+  :import:
+    - fancy-buttons
+  :fingerprint: fancy-buttons
+Fittext:
+  :gem: fittext
+  :import:
+    - fittext
+  :fingerprint: fittext
+Flint:
+  :gem: flint-gs
+  :import:
+    - flint
+  :fingerprint: flint
+# Foundation:
+#   :bower: zurb/bower-foundation
+#   :import:
+#     - foundation
+#   :fingerprint: foundation*
+#   :paths:
+#     - foundation/scss
+Grid Coordinates:
+  :gem: grid-coordinates
+  :import:
+    - grid-coordinates
+  :fingerprint: grid-coordinates
+Guff:
+  :gem: guff-compass
+  :import:
+    - guff
+  :fingerprint: guff
+Harsh:
+  :gem: harsh
+  :import:
+    - harsh
+  :fingerprint: harsh
+Compass Inuit:
+  :gem: compass-inuit
+  :import:
+    - compass-inuit
+  :fingerprint: compass-inuit*
+# Jacket:
+#   :gem: jacket
+#   :import:
+#     - jacket
+#   :fingerprint: jacket
+Modular Scale:
+  :gem: modular-scale
+  :import:
+    - modular-scale
+  :fingerprint: modular-scale
+Neat:
+  :gem: neat-compass
+  :import:
+    - bourbon/bourbon
+    - neat/neat
+  :fingerprint: (neat|neat/*)
+Normalize SCSS:
+  :gem: normalize-scss
+  :import:
+    - normalize-scss
+  :fingerprint: normalize-scss
+Photoshop Drop Shadow:
+  :gem: compass-photoshop-drop-shadow
+  :import:
+    - photoshop-drop-shadow
+  :fingerprint: photoshop-drop-shadow
+Quotation Marks:
+  :gem: quotation-marks
+  :import:
+    - quotation-marks
+  :fingerprint: quotation-marks
+Responsive Calculator:
+  :gem: rwdcalc
+  :import:
+    - rwdcalc
+  :fingerprint: rwdcalc
+Responsive Modular Scale:
+  :gem: responsive-modular-scale
+  :import:
+    - modular-scale
+    - responsive-modular-scale
+  :fingerprint: responsive-modular-scale
+Responsive Sass:
+  :gem: responsive-sass
+  :import:
+    - responsive-sass
+  :fingerprint: responsive-sass
+Salsa:
+  :gem: salsa
+  :import:
+    - salsa
+  :fingerprint: salsa
+Sassifaction:
+  :gem: Sassifaction
+  :import:
+    - Sassifaction
+  :fingerprint: Sassifaction
+Sassy Buttons:
+  :gem: sassy-buttons
+  :import:
+    - sassy-buttons
+  :fingerprint: sassy-buttons
+Sassy Maps:
+  :gem: sassy-maps
+  :import:
+    - sassy-maps
+  :fingerprint: sassy-maps
+SassyMatrix:
+  :gem: SassyMatrix
+  :import:
+    - matrix
+  :fingerprint: matrix
+Sassy Text Shadow:
+  :gem: sassy-text-shadow
+  :import:
+    - compass
+    - sassy-text-shadow
+  :fingerprint: sassy-text-shadow
+SassyCast:
+  :gem: SassyCast
+  :import:
+    - SassyCast
+  :fingerprint: SassyCast
+SassyJSON:
+  :gem: SassyJSON
+  :import:
+    - SassyJSON
+  :fingerprint: SassyJSON
+SassyLists:
+  :gem: SassyLists
+  :import:
+    - SassyLists
+  :fingerprint: SassyLists
+SassyStrings:
+  :gem: SassyStrings
+  :import:
+    - SassyString
+  :fingerprint: SassyString
+SassySort:
+  :gem: SassySort
+  :import:
+    - SassySort
+  :fingerprint: SassySort
+Scut:
+  :gem: scut
+  :import:
+    - scut
+  :fingerprint: scut
+# Singularity.gs:
+#   :gem: singularitygs
+#   :import:
+#     - singularitygs
+#   :fingerprint: singularitygs
+# Singularity Extras:
+#   :gem: singularity-extras
+#   :import:
+#     - singularitygs
+#     - singularity-extras
+#   :fingerprint: singularity-extras
+Stipe:
+  :gem: stipe
+  :import:
+    - stipe/manifest
+    - stipe/grid/extends
+  :fingerprint: (stipe|stipe/*)
+Stitch:
+  :gem: stitch
+  :import:
+    - stitch
+  :fingerprint: stitch
+# Susy:
+#   :gem: susy
+#   :import:
+#     - susy
+#   :fingerprint: susy
+# Toolkit:
+#   :gem: toolkit
+#   :import:
+#     - toolkit
+#   :fingerprint: toolkit
+'True':
+  :gem: 'true'
+  :import:
+    - 'true'
+  :fingerprint: 'true'
+YIQ Color Contrast:
+  :gem: compass-yiq-color-contrast
+  :import:
+    - yiq-color-contrast
+  :fingerprint: yiq-color-contrast
+Zen Grids:
+  :gem: zen-grids
+  :import:
+    - zen
+  :fingerprint: (zen|zen-grids)

@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////////////
+// sticky footer
+//////////////////////////////////////////////////////////////////
+
+@if $use-sticky-footer == true
+
+	+media-query(nth($bp-names,1))
+		html, body
+			height: 100%
+
+		.site,
+		%site
+			min-height: 100%
+			margin-bottom: -$footer-height
+			&:after
+				content: ""
+				display: block
+
+		.footer,
+		%footer,
+		.site:after,
+		%site:after
+			height: $footer-height

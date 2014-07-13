@@ -1,0 +1,7 @@
+@import "sassy-buttons";
+
+.red { @include sassy-button-gradient("matte", #e86a43); }
+
+.blue { @include sassy-button-gradient("simple", #4d8ccd); }
+
+.green { @include sassy-button-gradient("glass", #8cbe5f); }

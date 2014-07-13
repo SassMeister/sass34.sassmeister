@@ -1,0 +1,9 @@
+@import 'stitch';
+
+body {
+    @include sans-serif('Avenir');
+}
+
+#logo {
+    @include enable-hardware-acceleration
+}

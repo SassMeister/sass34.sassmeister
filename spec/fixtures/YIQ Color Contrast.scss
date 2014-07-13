@@ -1,0 +1,5 @@
+@import "yiq-color-contrast";
+
+#box {
+    @include yiq-contrasted(#0f0, #800080, #00FF00, 200);
+}

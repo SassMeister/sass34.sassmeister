@@ -1,0 +1,154 @@
+///////////////////////////////////////////////////////
+// Widths component
+///////////////////////////////////////////////////////
+
+///////////////////////////////
+// visible layout widths
+///////////////////////////////
+
+@mixin layout-widths($space: "")
+
+	// whole
+	.#{$space}one-whole
+		width: 100%
+
+	// halves
+	.#{$space}one-half,
+	.#{$space}two-fourths
+		width: 50%
+
+	// thirds
+	.#{$space}one-third
+		width: 33.333%
+
+	.#{$space}two-thirds
+		width: 66.666%
+
+	// fourths
+	.#{$space}one-fourth
+		width: 25%
+
+	.#{$space}three-fourths
+		width: 75%
+
+///////////////////////////////
+// invisible full widths
+///////////////////////////////
+
+@mixin widths($space: "")
+	
+	// whole
+	%#{$space}one-whole
+		width: 100%
+
+	// halves
+	%#{$space}one-half,
+	%#{$space}two-fourths,
+	%#{$space}three-sixths,
+	%#{$space}four-eighths,
+	%#{$space}five-tenths,
+	%#{$space}six-twelfths
+		width: 50%
+
+	// thirds
+	%#{$space}one-third,
+	%#{$space}two-sixths,
+	%#{$space}three-ninths,
+	%#{$space}four-twelfths
+		width: 33.333%
+
+	%#{$space}two-thirds,
+	%#{$space}four-sixths,
+	%#{$space}six-ninths,
+	%#{$space}eight-twelfths
+		width: 66.666%
+
+	// fourths
+	%#{$space}one-fourth,
+	%#{$space}two-eighths,
+	%#{$space}three-twelfths
+		width: 25%
+
+	%#{$space}three-fourths,
+	%#{$space}six-eighths,
+	%#{$space}nine-twelfths
+		width: 75%
+
+	// fifths
+	%#{$space}one-fifth,
+	%#{$space}two-tenths
+		width: 20%
+
+	%#{$space}two-fifths,
+	%#{$space}four-tenths
+		width: 40%
+
+	%#{$space}three-fifths,
+	%#{$space}six-tenths
+		width: 60%
+
+	%#{$space}four-fifths,
+	%#{$space}eight-tenths
+		width: 80%
+
+	// sixths
+	%#{$space}one-sixth,
+	%#{$space}two-twelfths
+		width: 16.666%
+
+	%#{$space}five-sixths,
+	%#{$space}ten-twelfths
+		width: 83.333%
+
+	// eighths
+	%#{$space}one-eighth
+		width: 12.5%
+	%#{$space}three-eighths
+		width: 37.5%
+	%#{$space}five-eighths
+		width: 62.5%
+	%#{$space}seven-eighths
+		width: 87.5%
+
+	// ninths
+	%#{$space}one-ninth
+		width: 11.111%
+	%#{$space}two-ninths
+		width: 22.222%
+	%#{$space}four-ninths
+		width: 44.444%
+	%#{$space}five-ninths
+		width: 55.555%
+	%#{$space}seven-ninths
+		width: 77.777%
+	%#{$space}eight-ninths
+		width: 88.888%
+
+	// tenths
+	%#{$space}one-tenth
+		width: 10%
+	%#{$space}three-tenths
+		width: 30%
+	%#{$space}seven-tenths
+		width: 70%
+	%#{$space}nine-tenths
+		width: 90%
+
+	// twelfths
+	%#{$space}one-twelfth
+		width: 8.333%
+	%#{$space}five-twelfths
+		width: 41.666%
+	%#{$space}seven-twelfths
+		width: 58.333%
+	%#{$space}eleven-twelfths
+		width: 91.666%
+
+@include layout-widths()
+@include widths()
+
+@each $name in $bp-names
+	+media-query($name)
+		+widths('#{$name}-')
+		+layout-widths('#{$name}-')
+		

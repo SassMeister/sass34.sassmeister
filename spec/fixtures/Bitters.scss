@@ -1,0 +1,15 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "bitters/bitters";
+
+h1[id] {
+  margin-bottom: .5em;
+}
+
+ul.default {
+  @extend %default-ul;
+}
+
+ol.default {
+  @extend %default-ol;
+}

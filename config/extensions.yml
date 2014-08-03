@@ -77,7 +77,7 @@ Color Schemer:
   :homepage: https://github.com/scottkellum/color-schemer
 Compass:
   :gem: compass
-  :version: 1.0.0.alpha.21
+  :version: 1.0.0.rc.0
   :import:
   - compass
   :fingerprint: (compass|compass/*)
@@ -121,7 +121,7 @@ Fittext:
   :homepage: http://www.bookcasey.com/fittext/
 Flint:
   :gem: flint-gs
-  :version: 1.7.2
+  :version: 1.8.0
   :import:
   - flint
   :fingerprint: flint

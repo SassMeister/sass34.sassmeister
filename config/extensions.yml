@@ -77,7 +77,7 @@ Color Schemer:
   :homepage: https://github.com/scottkellum/color-schemer
 Compass:
   :gem: compass
-  :version: 1.0.0.rc.0
+  :version: 1.0.0.rc.1
   :import:
   - compass
   :fingerprint: (compass|compass/*)
@@ -121,7 +121,7 @@ Fittext:
   :homepage: http://www.bookcasey.com/fittext/
 Flint:
   :gem: flint-gs
-  :version: 1.8.0
+  :version: 1.9.1
   :import:
   - flint
   :fingerprint: flint
@@ -310,7 +310,7 @@ SassyStrings:
   :homepage: https://github.com/HugoGiraudel/SassyStrings
 Scut:
   :gem: scut
-  :version: 1.0.0
+  :version: 1.0.1
   :import:
   - scut
   :fingerprint: scut

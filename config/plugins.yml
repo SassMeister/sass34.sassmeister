@@ -65,16 +65,16 @@ Bourbon:
   :import:
     - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
-# Breakpoint:
-#   :gem: breakpoint
-#   :import:
-#     - breakpoint
-#   :fingerprint: breakpoint
-# Breakpoint Slicer:
-#   :gem: breakpoint-slicer
-#   :import:
-#     - breakpoint-slicer
-#   :fingerprint: breakpoint-slicer
+Breakpoint:
+  :gem: breakpoint
+  :import:
+    - breakpoint
+  :fingerprint: breakpoint
+Breakpoint Slicer:
+  :gem: breakpoint-slicer
+  :import:
+    - breakpoint-slicer
+  :fingerprint: breakpoint-slicer
 Breakup:
   :gem: breakup
   :import:
@@ -122,13 +122,13 @@ Flint:
   :import:
     - flint
   :fingerprint: flint
-# Foundation:
-#   :bower: zurb/bower-foundation
-#   :import:
-#     - foundation
-#   :fingerprint: foundation*
-#   :paths:
-#     - foundation/scss
+Foundation:
+  :bower: zurb/bower-foundation
+  :import:
+    - foundation
+  :fingerprint: foundation*
+  :paths:
+    - foundation/scss
 Grid Coordinates:
   :gem: grid-coordinates
   :import:
@@ -149,11 +149,11 @@ Compass Inuit:
   :import:
     - compass-inuit
   :fingerprint: compass-inuit*
-# Jacket:
-#   :gem: jacket
-#   :import:
-#     - jacket
-#   :fingerprint: jacket
+Jacket:
+  :gem: jacket
+  :import:
+    - jacket
+  :fingerprint: jacket
 Modular Scale:
   :gem: modular-scale
   :import:
@@ -257,17 +257,17 @@ Scut:
   :import:
     - scut
   :fingerprint: scut
-# Singularity.gs:
-#   :gem: singularitygs
-#   :import:
-#     - singularitygs
-#   :fingerprint: singularitygs
-# Singularity Extras:
-#   :gem: singularity-extras
-#   :import:
-#     - singularitygs
-#     - singularity-extras
-#   :fingerprint: singularity-extras
+Singularity.gs:
+  :gem: singularitygs
+  :import:
+    - singularitygs
+  :fingerprint: singularitygs
+Singularity Extras:
+  :gem: singularity-extras
+  :import:
+    - singularitygs
+    - singularity-extras
+  :fingerprint: singularity-extras
 Stipe:
   :gem: stipe
   :import:
@@ -279,16 +279,16 @@ Stitch:
   :import:
     - stitch
   :fingerprint: stitch
-# Susy:
-#   :gem: susy
-#   :import:
-#     - susy
-#   :fingerprint: susy
-# Toolkit:
-#   :gem: toolkit
-#   :import:
-#     - toolkit
-#   :fingerprint: toolkit
+Susy:
+  :gem: susy
+  :import:
+    - susy
+  :fingerprint: susy
+Toolkit:
+  :gem: toolkit
+  :import:
+    - toolkit
+  :fingerprint: toolkit
 'True':
   :gem: 'true'
   :import:

@@ -10,7 +10,7 @@ Ark:
   :homepage: https://github.com/drewbolles/ark
 Base.Sass:
   :gem: base.sass
-  :version: 1.3.4
+  :version: 1.4.0
   :import:
   - base.sass/*
   :fingerprint: base.sass
@@ -33,7 +33,7 @@ Blend Modes:
   :homepage: https://github.com/heygrady/scss-blend-modes
 Bootstrap Sass:
   :gem: bootstrap-sass
-  :version: 3.2.0.1
+  :version: 3.2.0.2
   :import:
   - bootstrap
   :fingerprint: (bootstrap|bootstrap/*)
@@ -135,16 +135,16 @@ Fittext:
   :homepage: http://www.bookcasey.com/fittext/
 Flint:
   :gem: flint-gs
-  :version: 1.11.2
+  :version: 1.12.0
   :import:
   - flint
   :fingerprint: flint
-  :homepage: https://github.com/ezekg/flint/
+  :homepage: http://flint.gs
 Foundation:
   :bower: zurb/bower-foundation
   :paths:
   - foundation/scss
-  :version: 5.4.0
+  :version: 5.4.3
   :import:
   - foundation
   :fingerprint: foundation*
@@ -212,7 +212,7 @@ Neat:
   :homepage: https://github.com/jedfoster/neat-compass
 Normalize SCSS:
   :gem: normalize-scss
-  :version: 3.0.0.alpha.2
+  :version: 3.0.1
   :import:
   - normalize-scss
   :fingerprint: normalize-scss

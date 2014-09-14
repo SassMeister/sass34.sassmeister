@@ -1,0 +1,5 @@
+@import 'color-hacker';
+
+.test {
+  color: hack-colors(rgb(37,141,200) rgb(104,60,19));
+}

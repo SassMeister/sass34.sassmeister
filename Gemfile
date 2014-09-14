@@ -22,6 +22,7 @@ group :production do
 end
 
 group :application do
+  gem 'color-hacker'
   gem 'SassyBitwise'
   gem 'base.sass'
   gem 'flint-gs'

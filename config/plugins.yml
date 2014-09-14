@@ -1,3 +1,8 @@
+'Color Hacker':
+  :gem: color-hacker
+  :import:
+    - color-hacker
+  :fingerprint: color-hacker
 MathSass:
   :bower: mathsass
   :import: 

@@ -1,0 +1,7 @@
+@import 'singularitygs';
+@import 'singularity-quick-spanner';
+@import 'breakpoint-slicer';
+
+.test {
+  @include rwd-thumb-span($overhead-min: 1, $overhead-max: 20);
+}

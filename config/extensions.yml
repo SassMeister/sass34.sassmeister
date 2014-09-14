@@ -82,6 +82,13 @@ Ceasar Easing:
   - ceaser-easing
   :fingerprint: ceaser-easing
   :homepage: https://github.com/jhardy/compass-ceaser-easing
+Color Hacker:
+  :gem: color-hacker
+  :version: 1.0.0
+  :import:
+  - color-hacker
+  :fingerprint: color-hacker
+  :homepage: http://github.com/imathis/color-hacker
 Color Schemer:
   :gem: color-schemer
   :version: 0.2.8
@@ -353,6 +360,15 @@ Singularity Extras:
   - singularity-extras
   :fingerprint: singularity-extras
   :homepage: http://singularity.gs
+Singularity Quick Spanner:
+  :gem: singularity-quick-spanner
+  :version: 0.1.3
+  :import:
+  - singularitygs
+  - singularity-quick-spanner
+  - breakpoint-slicer
+  :fingerprint: singularity-quick-spanner
+  :homepage: https://github.com/lolmaus/singularity-quick-spanner
 Singularity.gs:
   :gem: singularitygs
   :version: 1.4.0

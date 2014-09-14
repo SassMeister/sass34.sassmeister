@@ -1,3 +1,10 @@
+'Singularity Quick Spanner':
+  :gem: singularity-quick-spanner
+  :import:
+    - singularitygs
+    - singularity-quick-spanner
+    - breakpoint-slicer
+  :fingerprint: singularity-quick-spanner
 'Color Hacker':
   :gem: color-hacker
   :import:

@@ -1,3 +1,10 @@
+Typesettings:
+  :bower: typesettings
+  :import:
+    - typesettings
+  :fingerprint: typesettings
+  :paths:
+    - typesettings/
 'Singularity Quick Spanner':
   :gem: singularity-quick-spanner
   :import:

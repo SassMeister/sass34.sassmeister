@@ -421,6 +421,15 @@ Typecsset:
   - typecsset
   :fingerprint: typecsset
   :homepage: https://github.com/csswizardry/typecsset
+Typesettings:
+  :bower: typesettings
+  :paths:
+  - typesettings/
+  :version: 2.0.0
+  :import:
+  - typesettings
+  :fingerprint: typesettings
+  :homepage: https://github.com/ianrose/typesettings
 YIQ Color Contrast:
   :gem: compass-yiq-color-contrast
   :version: 1.1.1

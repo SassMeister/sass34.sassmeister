@@ -10,9 +10,9 @@ Ark:
   :homepage: https://github.com/drewbolles/ark
 Base.Sass:
   :gem: base.sass
-  :version: 1.4.0
+  :version: 1.5.0
   :import:
-  - base.sass/*
+  - base.sass/+
   :fingerprint: base.sass
   :homepage: https://github.com/jsw0528/base.sass
 Bitters:

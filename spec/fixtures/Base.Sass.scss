@@ -1,4 +1,4 @@
-@import 'base.sass/*';
+@import 'base.sass/+';
 
 // You can use multi params
 $browser-supports: parse-rules('last 1 version', 'IE >= 8');

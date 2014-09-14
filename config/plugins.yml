@@ -20,7 +20,7 @@ Ark:
 Base.Sass:
   :gem: base.sass
   :import:
-    - base.sass/*
+    - base.sass/+
   :fingerprint: base.sass
 Typecsset:
   :bower: typecsset

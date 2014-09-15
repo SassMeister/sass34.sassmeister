@@ -1,3 +1,10 @@
+'Sass Color Helpers':
+  :bower: sass-color-helpers
+  :import:
+    - color-helpers
+  :fingerprint: color-helpers
+  :paths:
+    - sass-color-helpers/stylesheets
 UtilityBelt:
   :bower: UtilityBelt
   :import:
@@ -26,13 +33,13 @@ Typesettings:
   :fingerprint: color-hacker
 MathSass:
   :bower: mathsass
-  :import: 
+  :import:
     - math
   :fingerprint: math
   :paths:
     - mathsass/dist
 SassyBitwise:
-  :gem: SassyBitwise 
+  :gem: SassyBitwise
   :import:
     - SassyBitwise
   :fingerprint: SassyBitwise
@@ -57,17 +64,17 @@ Typecsset:
     - typecsset
 CSShake:
   :bower: csshake
-  :import: 
+  :import:
     - csshake
   :fingerprint: csshake
   :paths:
     - csshake/sass
 Garnish:
   :bower: garnish
-  :import: 
+  :import:
     - garnish
   :fingerprint: garnish
-  :paths: 
+  :paths:
     - garnish/src
 Bitters:
   :gem: bitters-compass

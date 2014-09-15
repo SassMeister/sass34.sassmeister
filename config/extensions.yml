@@ -267,6 +267,15 @@ Salsa:
   - salsa
   :fingerprint: salsa
   :homepage: http://tsi.github.com/Salsa/
+Sass Color Helpers:
+  :bower: sass-color-helpers
+  :paths:
+  - sass-color-helpers/stylesheets
+  :version: 2.0.0
+  :import:
+  - color-helpers
+  :fingerprint: color-helpers
+  :homepage: https://github.com/voxpelli/sass-color-helpers
 Sassifaction:
   :gem: Sassifaction
   :version: 0.0.4

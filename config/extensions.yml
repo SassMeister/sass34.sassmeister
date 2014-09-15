@@ -430,6 +430,15 @@ Typesettings:
   - typesettings
   :fingerprint: typesettings
   :homepage: https://github.com/ianrose/typesettings
+UtilityBelt:
+  :bower: UtilityBelt
+  :paths:
+  - UtilityBelt
+  :version: 1.1.0
+  :import:
+  - utility-belt
+  :fingerprint: utility-belt
+  :homepage: https://github.com/dmtintner/UtilityBelt
 YIQ Color Contrast:
   :gem: compass-yiq-color-contrast
   :version: 1.1.1

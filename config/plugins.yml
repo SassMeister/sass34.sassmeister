@@ -1,3 +1,10 @@
+UtilityBelt:
+  :bower: UtilityBelt
+  :import:
+    - utility-belt
+  :fingerprint: utility-belt
+  :paths:
+    - UtilityBelt
 Typesettings:
   :bower: typesettings
   :import:

@@ -1,0 +1,6 @@
+@import 'utility-belt';
+
+.price {
+  @extend %currency;
+}
+

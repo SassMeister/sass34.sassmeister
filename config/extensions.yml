@@ -400,6 +400,15 @@ Stitch:
   - stitch
   :fingerprint: stitch
   :homepage: https://github.com/anthonyshort/stitch-css
+Sunglass:
+  :bower: sunglass
+  :paths:
+  - sunglass
+  :version: 3.0.5
+  :import:
+  - sunglass
+  :fingerprint: sunglass
+  :homepage: https://github.com/devatrox/Sunglass
 Susy:
   :gem: susy
   :version: 2.1.3

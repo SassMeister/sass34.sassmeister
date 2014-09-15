@@ -1,3 +1,10 @@
+Sunglass:
+  :bower: sunglass
+  :import:
+    - sunglass
+  :fingerprint: sunglass
+  :paths:
+    - sunglass
 'Sass Color Helpers':
   :bower: sass-color-helpers
   :import:

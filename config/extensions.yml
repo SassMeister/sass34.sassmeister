@@ -235,7 +235,7 @@ Position:
   :bower: position
   :paths:
   - position/sass
-  :version: 0.2.3
+  :version: 0.2.5
   :import:
   - position
   :fingerprint: position

@@ -1,6 +1,6 @@
 {
   "name": "position",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "homepage": "https://github.com/Undistraction/position",
   "authors": [
     "Pedr Browne <pedr.browne@gmail.com>"
@@ -10,7 +10,7 @@
     "sass"
   ],
   "license": "MIT",
-  "main": "sass/_position.scss",
+  "main": "dist/_position.scss",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,11 +18,11 @@
     "test",
     "tests"
   ],
-  "_release": "0.2.3",
+  "_release": "0.2.5",
   "_resolution": {
     "type": "version",
-    "tag": "0.2.3",
-    "commit": "0fecf2510752219738cec19f945419af7208ff52"
+    "tag": "0.2.5",
+    "commit": "467e332377e2ac11479db2dd41384c14d56893b1"
   },
   "_source": "git://github.com/Undistraction/position.git",
   "_target": "~0.2.3",

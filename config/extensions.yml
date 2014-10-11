@@ -443,7 +443,7 @@ Typesettings:
   :bower: typesettings
   :paths:
   - typesettings/
-  :version: 2.0.0
+  :version: 2.0.1
   :import:
   - typesettings
   :fingerprint: typesettings

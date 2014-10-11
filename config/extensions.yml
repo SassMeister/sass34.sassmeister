@@ -276,6 +276,13 @@ Salsa:
   - salsa
   :fingerprint: salsa
   :homepage: http://tsi.github.com/Salsa/
+Sass A11Y:
+  :gem: sass-a11y
+  :version: 0.1.0
+  :import:
+  - a11y
+  :fingerprint: a11y
+  :homepage: https://github.com/Team-Sass/sass-a11y
 Sass Color Helpers:
   :bower: sass-color-helpers
   :paths:

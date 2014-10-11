@@ -22,6 +22,7 @@ group :production do
 end
 
 group :application do
+  gem 'sass-a11y'
   gem 'singularity-quick-spanner'
   gem 'color-hacker'
   gem 'SassyBitwise'

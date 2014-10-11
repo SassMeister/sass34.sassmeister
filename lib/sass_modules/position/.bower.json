@@ -1,0 +1,30 @@
+{
+  "name": "position",
+  "version": "0.2.3",
+  "homepage": "https://github.com/Undistraction/position",
+  "authors": [
+    "Pedr Browne <pedr.browne@gmail.com>"
+  ],
+  "description": "Simple Mixins For Offsets and Position",
+  "keywords": [
+    "sass"
+  ],
+  "license": "MIT",
+  "main": "sass/_position.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.3",
+    "commit": "0fecf2510752219738cec19f945419af7208ff52"
+  },
+  "_source": "git://github.com/Undistraction/position.git",
+  "_target": "~0.2.3",
+  "_originalSource": "position"
+}

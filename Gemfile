@@ -57,7 +57,6 @@ group :application do
   gem 'breakup'
   gem 'singularity-golden-grid'
   gem 'compass-placeholders'
-  gem 'true'
   gem 'SassyLists', '2.2.1'
   gem 'sassy-maps'
   gem 'bitters-compass'

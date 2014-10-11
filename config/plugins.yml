@@ -1,3 +1,10 @@
+Position:
+  :bower: position
+  :import:
+    - position
+  :fingerprint: position
+  :paths:
+    - position/sass
 Sunglass:
   :bower: sunglass
   :import:
@@ -330,10 +337,12 @@ Toolkit:
     - toolkit
   :fingerprint: toolkit
 'True':
-  :gem: 'true'
+  :bower: 'ericam/true'
   :import:
     - 'true'
   :fingerprint: 'true'
+  :paths:
+    - true/sass
 YIQ Color Contrast:
   :gem: compass-yiq-color-contrast
   :import:

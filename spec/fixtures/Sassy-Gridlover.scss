@@ -1,0 +1,22 @@
+@import 'sassy-gridlover';
+
+body {
+    @include sassy-gridlover-body($baseFontSize, true);
+}
+
+h1 {
+    @include sassy-gridlover-heading(3, true);
+}
+h2 {
+    @include sassy-gridlover-heading(2, true);
+}
+h3 {
+    @include sassy-gridlover-heading(1, true);
+}
+h4 {
+    @include sassy-gridlover-heading(0, true);
+}
+
+p, ul, ol, pre, table, blockquote {
+    @include sassy-gridlover-margins(true);
+}

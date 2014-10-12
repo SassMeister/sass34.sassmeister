@@ -321,6 +321,15 @@ Sassy Text Shadow:
   - sassy-text-shadow
   :fingerprint: sassy-text-shadow
   :homepage: http://sassymothereffingtextshadow.com
+Sassy-Gridlover:
+  :bower: sassy-gridlover
+  :paths:
+  - sassy-gridlover/sassy-gridlover
+  :version: 1.0.0
+  :import:
+  - sassy-gridlover
+  :fingerprint: sassy-gridlover
+  :homepage: https://github.com/hiulit/Sassy-Gridlover
 SassyBitwise:
   :gem: SassyBitwise
   :version: 1.1.2

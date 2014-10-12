@@ -28,6 +28,7 @@
     "typecsset": "~0.3.0",
     "typesettings": "~2.0.0",
     "position": "~0.2.3",
-    "true": "ericam/true"
+    "true": "ericam/true",
+    "sassy-gridlover": ">=0.0.1"
   }
 }

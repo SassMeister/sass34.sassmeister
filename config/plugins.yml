@@ -1,3 +1,10 @@
+Sassy-Gridlover:
+  :bower: sassy-gridlover
+  :import: 
+    - sassy-gridlover
+  :fingerprint: sassy-gridlover
+  :paths:
+    - sassy-gridlover/sassy-gridlover
 'Sass A11Y':
   :gem: sass-a11y
   :import:

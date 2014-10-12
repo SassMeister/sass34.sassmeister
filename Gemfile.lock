@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/SassMeister/ruby-compiler.git
-  revision: fb7a05fc06c7ece22baa8dedbe1d60e64f657e9b
+  revision: 383fc7adcaa1617582bf353cb137ce14aacef0ed
   specs:
     sassmeister (0.0.1)
       dalli (~> 2.6.4)

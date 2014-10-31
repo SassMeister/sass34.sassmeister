@@ -29,6 +29,8 @@
     "typesettings": "~2.0.0",
     "position": "~0.2.3",
     "true": "ericam/true",
-    "sassy-gridlover": ">=0.0.1"
+    "sassy-gridlover": ">=0.0.1",
+    "zurb/bower-foundation": ">=0.0.1",
+    "ericam/true": ">=0.0.1"
   }
 }

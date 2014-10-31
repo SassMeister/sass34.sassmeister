@@ -33,7 +33,7 @@ Blend Modes:
   :homepage: https://github.com/heygrady/scss-blend-modes
 Bootstrap Sass:
   :gem: bootstrap-sass
-  :version: 3.2.0.2
+  :version: 3.3.0.1
   :import:
   - bootstrap
   :fingerprint: (bootstrap|bootstrap/*)
@@ -142,7 +142,7 @@ Fittext:
   :homepage: http://www.bookcasey.com/fittext/
 Flint:
   :gem: flint-gs
-  :version: 2.0.6
+  :version: 2.0.9
   :import:
   - flint
   :fingerprint: flint
@@ -151,7 +151,7 @@ Foundation:
   :bower: zurb/bower-foundation
   :paths:
   - foundation/scss
-  :version: 5.4.6
+  :version: 5.4.7
   :import:
   - foundation
   :fingerprint: foundation*
@@ -235,7 +235,7 @@ Position:
   :bower: position
   :paths:
   - position/sass
-  :version: 0.2.5
+  :version: 0.2.12
   :import:
   - position
   :fingerprint: position
@@ -325,7 +325,7 @@ Sassy-Gridlover:
   :bower: sassy-gridlover
   :paths:
   - sassy-gridlover/sassy-gridlover
-  :version: 1.0.0
+  :version: 1.1.0
   :import:
   - sassy-gridlover
   :fingerprint: sassy-gridlover
@@ -470,7 +470,7 @@ Typesettings:
   :bower: typesettings
   :paths:
   - typesettings/
-  :version: 2.0.1
+  :version: 2.1.0
   :import:
   - typesettings
   :fingerprint: typesettings

@@ -1,6 +1,5 @@
 require 'bundler/setup'
 
 require 'sassmeister'
+require 'tasks' # Loads tasks from sassmeister gem
 
-load 'lib/tasks/test.rake'
-load 'lib/tasks/update.rake'

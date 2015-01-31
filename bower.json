@@ -20,7 +20,7 @@
     "bourbon": "~3.1.8",
     "csshake": "*",
     "fastclick": ">=0.6.11",
-    "foundation": "~5.3.0",
+    "foundation": "https://github.com/zurb/bower-foundation.git",
     "garnish": "~0.2.0",
     "sass-color-helpers": "~2.0.0",
     "sunglass": "~3.0.5",
@@ -28,9 +28,7 @@
     "typecsset": "~0.3.0",
     "typesettings": "~2.0.0",
     "position": "~0.2.3",
-    "true": "ericam/true",
-    "sassy-gridlover": ">=0.0.1",
-    "zurb/bower-foundation": ">=0.0.1",
-    "ericam/true": ">=0.0.1"
+    "true": "https://github.com/ericam/true.git",
+    "sassy-gridlover": ">=0.0.1"
   }
 }

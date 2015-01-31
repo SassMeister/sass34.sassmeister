@@ -120,10 +120,12 @@ Bootstrap Sass:
     - bootstrap
   :fingerprint: (bootstrap|bootstrap/*)
 Bourbon:
-  :gem: bourbon-compass
+  :bower: bourbon
   :import:
     - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
+  :paths:
+    - 
 Breakpoint:
   :gem: breakpoint
   :import:
@@ -182,7 +184,7 @@ Flint:
     - flint
   :fingerprint: flint
 Foundation:
-  :bower: zurb/bower-foundation
+  :bower: foundation
   :import:
     - foundation
   :fingerprint: foundation*
@@ -349,7 +351,7 @@ Toolkit:
     - toolkit
   :fingerprint: toolkit
 'True':
-  :bower: 'ericam/true'
+  :bower: 'true'
   :import:
     - 'true'
   :fingerprint: 'true'

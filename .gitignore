@@ -2,9 +2,10 @@
 .bundle
 .sass-cache/*
 tmp/
-lib/sass_modules/fastclick
-lib/sass_modules/lodash
-lib/sass_modules/jquery*
-lib/sass_modules/modernizr
-lib/sass_modules/sizzle
-lib/sass_modules/foundation/js
+lib/sass_modules/vendor/fastclick
+lib/sass_modules/vendor/lodash
+lib/sass_modules/vendor/jquery*
+lib/sass_modules/vendor/modernizr
+lib/sass_modules/vendor/sizzle
+lib/sass_modules/vendor/foundation/js
+sassdoc

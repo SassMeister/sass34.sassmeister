@@ -1,0 +1,49 @@
+{
+  "name": "Sunglass",
+  "description": "A mixin and functions library for Sass",
+  "version": "3.0.5",
+  "authors": [
+    "Jason Nickel <mail@devatrox.de>"
+  ],
+  "keywords": [
+    "sass",
+    "library",
+    "mixins",
+    "functions",
+    "grids",
+    "shadow"
+  ],
+  "main": [
+    "_sunglass.scss",
+    "addons/_bootstrap-grid.scss",
+    "addons/_bootstrap3-grid.scss",
+    "addons/_reset.scss"
+  ],
+  "ignore": [
+    "specs",
+    "test",
+    "tests",
+    ".gitignore",
+    ".editorconfig",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "TODO.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "sache.json"
+  ],
+  "homepage": "https://github.com/devatrox/Sunglass",
+  "license": "MIT",
+  "_release": "3.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.5",
+    "commit": "555d9065b56d53e91f89e4d43f02c821fe3308f3"
+  },
+  "_source": "git://github.com/devatrox/Sunglass.git",
+  "_target": "~3.0.5",
+  "_originalSource": "sunglass"
+}

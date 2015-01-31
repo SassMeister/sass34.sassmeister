@@ -1,0 +1,24 @@
+{
+	"name": "sassy-gridlover",
+	"version": "1.1.0",
+	"main": [
+		"sassy-gridlover/_config.scss",
+		"sassy-gridlover/_sassy-gridlover.scss"
+	],
+	"keywords": [
+		"typography",
+		"baseline",
+		"modular",
+		"scale",
+		"vertical-rhythm",
+		"sass",
+		"scss",
+		"mixins",
+		"gridlover"
+	],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"components"
+	]
+}

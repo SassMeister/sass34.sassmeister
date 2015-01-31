@@ -1,0 +1,5027 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>Position - v0.2.14</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+<link href="http://sass-lang.com/favicon.ico" rel="shortcut icon">
+
+</head>
+<body>
+
+  
+  <aside class="sidebar" role="nav">
+    
+  <div class="sidebar__header">
+  <h1 class="sidebar__title">
+    
+      <a href="https://github.com/Undistraction/Position">Position - v0.2.14</a>
+    
+  </h1>
+</div>
+
+<div class="sidebar__body">
+  
+  
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="support"><a href="#support">Support</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="support-function"><a href="#support-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="pos-parse-offsets" data-type="function">
+              <a href="#function-pos-parse-offsets">pos-parse-offsets
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-position-is-valid" data-type="function">
+              <a href="#function-pos-position-is-valid">pos-position-is-valid
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-is-keyword" data-type="function">
+              <a href="#function-pos-is-keyword">pos-is-keyword
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-parse-offsets-for-always-valueless" data-type="function">
+              <a href="#function-pos-parse-offsets-for-always-valueless">pos-parse-offsets-for-always-valueless
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-parse-offsets-for-always-value" data-type="function">
+              <a href="#function-pos-parse-offsets-for-always-value">pos-parse-offsets-for-always-value
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-orientation-for-support-valueless" data-type="function">
+              <a href="#function-pos-orientation-for-support-valueless">pos-orientation-for-support-valueless
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-throw-error" data-type="function">
+              <a href="#function-pos-throw-error">pos-throw-error
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-parse-value-filter" data-type="function">
+              <a href="#function-pos-parse-value-filter">pos-parse-value-filter
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-is-valid-value" data-type="function">
+              <a href="#function-pos-is-valid-value">pos-is-valid-value
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-is-number-with-unit" data-type="function">
+              <a href="#function-pos-is-number-with-unit">pos-is-number-with-unit
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-is-valid-unitless" data-type="function">
+              <a href="#function-pos-is-valid-unitless">pos-is-valid-unitless
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-is-calc" data-type="function">
+              <a href="#function-pos-is-calc">pos-is-calc
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="support-mixin"><a href="#support-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="pos-render" data-type="mixin">
+              <a href="#mixin-pos-render">pos-render
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="support-variable"><a href="#support-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="pos-accepted-position-values" data-type="variable">
+              <a href="#variable-pos-accepted-position-values">pos-accepted-position-values
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-always-valueless" data-type="variable">
+              <a href="#variable-pos-always-valueless">pos-always-valueless
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-always-value" data-type="variable">
+              <a href="#variable-pos-always-value">pos-always-value
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-support-valueless" data-type="variable">
+              <a href="#variable-pos-support-valueless">pos-support-valueless
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-keywords" data-type="variable">
+              <a href="#variable-pos-keywords">pos-keywords
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-valid-unitless-values" data-type="variable">
+              <a href="#variable-pos-valid-unitless-values">pos-valid-unitless-values
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-missing-value-error" data-type="variable">
+              <a href="#variable-pos-missing-value-error">pos-missing-value-error
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-unsupported-value-error" data-type="variable">
+              <a href="#variable-pos-unsupported-value-error">pos-unsupported-value-error
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-invalid-keyword-error" data-type="variable">
+              <a href="#variable-pos-invalid-keyword-error">pos-invalid-keyword-error
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pos-invalid-value-error" data-type="variable">
+              <a href="#variable-pos-invalid-value-error">pos-invalid-value-error
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="api"><a href="#api">API</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="api-mixin"><a href="#api-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="position" data-type="mixin">
+              <a href="#mixin-position">position
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="absolute" data-type="mixin">
+              <a href="#mixin-absolute">absolute
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="fixed" data-type="mixin">
+              <a href="#mixin-fixed">fixed
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="relative" data-type="mixin">
+              <a href="#mixin-relative">relative
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="static" data-type="mixin">
+              <a href="#mixin-static">static
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+  
+</div>
+
+
+  </aside>
+
+  
+  <article class="main" role="main">
+
+    
+    <header class="header" role="banner">
+  <div class="container">
+  
+    <div class="header__description">
+      <p>Mixins for setting an elements position and offsets</p>
+
+    </div>
+  
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
+  </div>
+</header>
+
+
+    <div class="container">
+    
+
+  
+  
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="support">Support</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="support-function">
+              <h2 class="main__heading--secondary">functions</h2>
+
+              
+              
+                <section class="main__item  item" id="function-pos-parse-offsets">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-parse-offsets">pos-parse-offsets</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-parse-offsets($args) { 
+
+  // Offsets acts as our model. We use the args to adjust its
+  // values and untimately use it to render.
+  $offsets: (
+    top: null,
+    right: null,
+    bottom: null,
+    left: null
+  );
+
+  // If a keyword accepted a value and it was present $skip will be set to true so
+  // that we don&#39;t parse that value as a keyword and skip on to the next item
+  $skip: false;
+
+  // Run through each item, checking its validity and setting any offsets it
+  // effects.
+  @each $item in $args {
+
+    @if not $skip {
+      // Setup for this iteration
+      $index: index($args, $item);
+      $is-last-item: $index == length($args);
+      $next-item: null;
+
+      @if not $is-last-item {
+        $next-item: nth($args, $index + 1);
+      }
+
+      // Handle keyword that doesn&#39;t accept a value
+      @if index($pos-always-valueless, $item) {
+        @if $is-last-item or pos-is-keyword($next-item) {
+          $offsets: pos-parse-offsets-for-always-valueless($offsets, $item);
+        } @else {
+          $error: pos-throw-error( $pos-unsupported-value-error, &quot;`#{$item}` doesn&#39;t support a value but found: `#{$next-item}`.&quot;);
+        }
+      // Handle keyword that must have a value
+      } @else if index($pos-always-value, $item) {
+        // Do we have a united next item?
+        @if not ( $is-last-item or pos-is-keyword($next-item) ) {
+          $skip: true;
+          $offsets: pos-parse-offsets-for-always-value($offsets, $item, $next-item);
+        } @else {
+          // Handle errors
+          @if $next-item {
+            $error: pos-throw-error( $pos-invalid-value-error, &quot;`#{$item}` should be followed by a valid value, yet it was `#{$next-item}`.&quot;);
+          } @else {
+            $error: pos-throw-error( $pos-missing-value-error, &quot;`#{$item}` should be followed by a valid value, but none was supplied.&quot;);
+          }
+
+        }
+      // Handle keyword that might have a value
+      } @else if index($pos-support-valueless, $item) {
+
+        // Is the next item is a valid value?
+        $value: null;
+
+        @if $is-last-item or pos-is-keyword($next-item) {
+          // Value is unitless
+          $value: 0;
+        } @else {
+          // Value is valid unit
+          $skip: true;
+
+          @if not pos-is-valid-value($next-item) {
+            $orientation: pos-orientation-for-support-valueless($item);
+            $next-item: pos-parse-value-filter($next-item, $orientation)
+          }
+
+          $value: $next-item;
+        } @else {
+          $error: pos-throw-error( $pos-invalid-value-error, &quot;`#{$item}` was followed by an invalid value; `{$value}`&quot;);
+        }
+
+        $offsets: map-merge($offsets, ($item: $value));
+      } @else {
+        $error: pos-throw-error( $pos-invalid-keyword-error, &quot;`#{$item}` is not a valid keyword.&quot;);
+      }
+
+    } @else {
+      // We skipped this item, so reset for next iteration
+      $skip: false;
+    }
+  }
+
+  // Build and return a map containing non-null offsets
+  $non-null-offsets:();
+  @each $key, $value in $offsets {
+    @if $value {
+      $non-null-offsets: map-merge($non-null-offsets, ($key: $value));
+    }
+  }
+
+  @return $non-null-offsets;
+ }"
+    data-collapsed="@function pos-parse-offsets($args) { ... }"><code>@function pos-parse-offsets($args) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L52-L146" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>This is the workhorse function, taking a list of offset keywords and values and parsing them
+to an object of offset values.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc"><p>A list of offset keywords and values</p>
+</td>
+          <td data-label="type">
+          
+            List
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>A map of offsets to be rendered as CSS properties</p>
+
+  
+    Map
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Throws</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>$pos-unsupported-value-error</p>
+</li>
+    
+      <li><p>$pos-invalid-value-error</p>
+</li>
+    
+      <li><p>$pos-missing-value-error</p>
+</li>
+    
+      <li><p>$pos-invalid-keyword-error</p>
+</li>
+    
+  </ul>
+
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-position-is-valid">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-position-is-valid">pos-position-is-valid</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-position-is-valid($value) { 
+  @return not not index($pos-accepted-position-values, $value);
+ }"
+    data-collapsed="@function pos-position-is-valid($value) { ... }"><code>@function pos-position-is-valid($value) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L156-L158" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Determine if the value is a valid value for position</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>Value to use for $position.</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Was the position valid?</p>
+
+  
+    Bool
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-is-keyword">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-is-keyword">pos-is-keyword</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-is-keyword($value) { 
+  @return not not index($pos-keywords, $value);
+ }"
+    data-collapsed="@function pos-is-keyword($value) { ... }"><code>@function pos-is-keyword($value) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L168-L170" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Determine if the value is a supported keyword.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>Item to be checked</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Was the item a supported keyword?</p>
+
+  
+    Bool
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-parse-offsets-for-always-valueless">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-parse-offsets-for-always-valueless">pos-parse-offsets-for-always-valueless</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-parse-offsets-for-always-valueless($offsets, $item) { 
+  // Horizontal Fill
+  @if $item == fill-h or $item == fill  {
+    $offsets: map-merge($offsets, (
+      left: 0,
+      right: 0
+    ));
+  }
+
+  // Vertical Fill
+  @if $item == fill-v or $item == fill {
+    $offsets: map-merge($offsets, (
+      top: 0,
+      bottom: 0
+    ));
+  }
+
+  @return $offsets;
+ }"
+    data-collapsed="@function pos-parse-offsets-for-always-valueless($offsets, $item) { ... }"><code>@function pos-parse-offsets-for-always-valueless($offsets, $item) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L183-L201" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Parse keyword that is always valueless to offset values.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$offsets</code></th>
+          <td data-label="desc"><p>Map of offsets to adjust for the given keyword.</p>
+</td>
+          <td data-label="type">
+          
+            Map
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$item</code></th>
+          <td data-label="desc"><p>Offset keyword.</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Adjusted Offsets</p>
+
+  
+    Map
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-parse-offsets-for-always-value">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-parse-offsets-for-always-value">pos-parse-offsets-for-always-value</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-parse-offsets-for-always-value($offsets, $item, $item) { 
+  // Do we need to parse each value?
+  $should-parse-value: not pos-is-valid-value($value);
+  // Separate values so we can parse independently by orientation if needed
+  $value-h: $value;
+  $value-v: $value;
+
+  @if $item == offset-h or $item == offset or $item == all {
+
+    @if $should-parse-value {
+      $value-h: pos-parse-value-filter($value, horizontal);
+    }
+
+    $offsets: map-merge($offsets, (
+      left: $value-h,
+      right: $value-h
+    ));
+  }
+
+  @if $item == offset-v or $item == offset or $item == all {
+
+    @if $should-parse-value {
+      $value-v: pos-parse-value-filter($value, vertical);
+    }
+
+    $offsets: map-merge($offsets, (
+      top: $value-v,
+      bottom: $value-v
+    ));
+  }
+
+  @return $offsets;
+ }"
+    data-collapsed="@function pos-parse-offsets-for-always-value($offsets, $item, $item) { ... }"><code>@function pos-parse-offsets-for-always-value($offsets, $item, $item) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L216-L248" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Parse keyword that always has a value and its value to offset values.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$offsets</code></th>
+          <td data-label="desc"><p>Map of offsets to adjust for the given keyword and value.</p>
+</td>
+          <td data-label="type">
+          
+            Map
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$item</code></th>
+          <td data-label="desc"><p>Offset keyword.</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$item</code></th>
+          <td data-label="desc"><p>Offset value.</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Adjusted Offsets</p>
+
+  
+    Map
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-orientation-for-support-valueless">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-orientation-for-support-valueless">pos-orientation-for-support-valueless</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-orientation-for-support-valueless($item) { 
+  @if $item == left or $item == right {
+    @return horizontal;
+  } @else {
+    @return vertical;
+  }
+ }"
+    data-collapsed="@function pos-orientation-for-support-valueless($item) { ... }"><code>@function pos-orientation-for-support-valueless($item) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L258-L264" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Get the orientation for a valueless keyword</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$item</code></th>
+          <td data-label="desc"><p>An item from $pos-support-valueless list</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>The keyword&#39;s orientation (vertical | horizontal)</p>
+
+  
+    String
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-throw-error">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-throw-error">pos-throw-error</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-throw-error($error, $message) { 
+  @if $pos-under-test {
+    @if not $pos-error-thrown {
+      $pos-error-thrown: true !global;
+      $pos-last-error: $error !global;
+    }
+  } @else {
+    @error &quot;#{$error} #{$message}&quot;;
+  }
+  @return null;
+ }"
+    data-collapsed="@function pos-throw-error($error, $message) { ... }"><code>@function pos-throw-error($error, $message) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L309-L319" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>By default, this function will throw a Sass error, but allows errors to be stopped during testing,
+with the error saved to <code>$pos-last-error</code> instead so tests can check it was thrown.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$error</code></th>
+          <td data-label="desc"><p>The name of the error</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$message</code></th>
+          <td data-label="desc"><p>The error message</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>A map of offsets to be rendered as CSS properties</p>
+
+  
+    Map
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-parse-value-filter">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-parse-value-filter">pos-parse-value-filter</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-parse-value-filter($value, $The) { 
+  @return pos-throw-error($pos-invalid-value-error, &quot;Invalid value #{$value}&quot;);
+ }"
+    data-collapsed="@function pos-parse-value-filter($value, $The) { ... }"><code>@function pos-parse-value-filter($value, $The) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L331-L333" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Overridable hook to handle unrecognised values. By default it will throw an error.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>An unrecognised value</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$The</code></th>
+          <td data-label="desc"><p>orientation of the value&#39;s keyword (horizontal | vertical)</p>
+</td>
+          <td data-label="type">
+          
+            Orientation
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Throws</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>$pos-unsupported-value-error</p>
+</li>
+    
+  </ul>
+
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-is-valid-value">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-is-valid-value">pos-is-valid-value</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-is-valid-value($value) { 
+  @return pos-is-number-with-unit($value)
+       or pos-is-valid-unitless($value)
+       or pos-is-calc($value);
+ }"
+    data-collapsed="@function pos-is-valid-value($value) { ... }"><code>@function pos-is-valid-value($value) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L343-L347" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Was the value a valid one; either united, supported unitless or calc</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>The value to be checked</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Was the value valid?</p>
+
+  
+    Bool
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-is-number-with-unit">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-is-number-with-unit">pos-is-number-with-unit</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-is-number-with-unit($value) { 
+  @return (type-of($value) == number and not unitless($value));
+ }"
+    data-collapsed="@function pos-is-number-with-unit($value) { ... }"><code>@function pos-is-number-with-unit($value) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L357-L359" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Determine if the value is a valid number with a unit</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>Value to be checked</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Was the value number with a unit?</p>
+
+  
+    Bool
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-is-valid-unitless">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-is-valid-unitless">pos-is-valid-unitless</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-is-valid-unitless($value) { 
+  @return not not index($pos-valid-unitless-values, $value);
+ }"
+    data-collapsed="@function pos-is-valid-unitless($value) { ... }"><code>@function pos-is-valid-unitless($value) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L369-L371" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Determine if the value is a valid unitless value.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>Value to be checked</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Was the value unitless?</p>
+
+  
+    Bool
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-pos-is-calc">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-pos-is-calc">pos-is-calc</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function pos-is-calc($value) { 
+ @return str-slice($value + &quot;&quot;, 1, 4) == calc;
+ }"
+    data-collapsed="@function pos-is-calc($value) { ... }"><code>@function pos-is-calc($value) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L381-L383" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Determine if the value is a <code>calc()</code> expression.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$value</code></th>
+          <td data-label="desc"><p>Value to be checked</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Was the value a <code>calc</code> expression?</p>
+
+  
+    Bool
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="support-mixin">
+              <h2 class="main__heading--secondary">mixins</h2>
+
+              
+              
+                <section class="main__item  item" id="mixin-pos-render">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#mixin-pos-render">pos-render</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin pos-render() { 
+  // Render position
+  position: $position;
+
+  // Render offsets
+  @each $offset, $offset-value in $offsets {
+    #{$offset}: #{$offset-value};
+  }
+ }"
+    data-collapsed="@mixin pos-render() { ... }"><code>@mixin pos-render() { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss#L274-L282" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p> Render offsets to CSS properties.</p>
+<p> @param {String} $position
+  The position - One of absolute | fixed | relative | static
+.
+ @param {List} $args
+  A map of offset keywords and values.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="support-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                <section class="main__item  item" id="variable-pos-accepted-position-values">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-accepted-position-values">pos-accepted-position-values</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-accepted-position-values: fixed absolute relative static;</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Values accepted for <code>position</code>.</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-always-valueless">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-always-valueless">pos-always-valueless</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-always-valueless: fill fill-h fill-v;</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Keywords that are never followed by a value</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-always-value">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-always-value">pos-always-value</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-always-value: offset offset-h offset-v all;</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Keywords that are always followed by a value</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-support-valueless">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-support-valueless">pos-support-valueless</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-support-valueless: left right top bottom;</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Keywords that are sometimes followed by a value</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-keywords">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-keywords">pos-keywords</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-keywords: join($pos-support-valueless, join($pos-always-valueless, $pos-always-value));</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>All Keywords</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-valid-unitless-values">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-valid-unitless-values">pos-valid-unitless-values</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-valid-unitless-values: auto initial inherit 0;</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Values without a unit that are accepted without being parsed</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-missing-value-error">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-missing-value-error">pos-missing-value-error</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-missing-value-error: "Missing Value Error";</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Error thrown when an item that needs a value has no following value</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-unsupported-value-error">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-unsupported-value-error">pos-unsupported-value-error</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-unsupported-value-error: "Unsupported Value Error";</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Error thrown when an item which doesn&#39;t support a value has a value following it</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-invalid-keyword-error">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-invalid-keyword-error">pos-invalid-keyword-error</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-invalid-keyword-error: "Invalid Keyword Error";</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Error thrown when an unsupported keyword is used</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="variable-pos-invalid-value-error">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#variable-pos-invalid-value-error">pos-invalid-value-error</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$pos-invalid-value-error: "Invalid Value Error";</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_support.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Error thrown when an item is followed by an invalid value</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="api">API</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="api-mixin">
+              <h2 class="main__heading--secondary">mixins</h2>
+
+              
+              
+                <section class="main__item  item" id="mixin-position">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-position">position</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin position($position, $args: ()) { 
+
+  $offsets: ();
+
+  // Check position is a supported value
+  @if not pos-position-is-valid($position) {
+    $error: pos-throw-error( $pos-error-invalid-position,  &quot;#{$position} is not a valid value for `position`&quot; );
+  }
+
+  // Parse offsets if preset
+  @if $args {
+    $offsets: pos-parse-offsets($args);
+  }
+
+  @include pos-render($position, $offsets);
+ }"
+    data-collapsed="@mixin position($position, $args: ()) { ... }"><code>@mixin position($position, $args: ()) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_api.scss#L49-L64" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$position</code></th>
+          <td data-label="desc"><p>One of absolute | relative | fixed</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc"><p>A list of offset keywords and values. Some keywords require a following value, some do not
+ accept a following value, and for some the value is optional. The possible values are:</p>
+<ul>
+<li><code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> If one of these keywords is followed by a value, the
+offset will be set to that value. If no value follows, the offset will be set to zero.</li>
+<li><code>offset | all | offset-h | offset-v</code> All these values require a value. <code>offset</code> and <code>all</code>
+(which is just an alias of <code>offset</code>) will set all four offsets (&#39;top&#39;, &#39;bottom&#39;, &#39;left&#39;
+and <code>right</code>) to the following value. <code>offset-h</code> will set the <code>left</code> and <code>right</code> offsets to the
+following value, and <code>offset-v</code> will set the <code>top</code> and <code>bottom</code> offsets to the following
+value.</li>
+<li><p><code>fill</code>, <code>fill-h</code> and <code>fill-v</code> do not take a following value. <code>fill</code> will set all offsets to
+zero. <code>fill-h</code> will set the <code>left</code> and <code>right</code> offsets to zero, and <code>fill-v</code> will set the
+<code>top</code> and <code>bottom</code> offsets to zero.</p>
+<p>Values are evaluated LTR with later values overriding earlier values.</p>
+</li>
+</ul>
+</td>
+          <td data-label="type">
+          
+            List
+          
+          </td>
+          <td data-label="default">
+          
+            <code>()</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Usage</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss"> .element {
+   @include position(absolute, left top 10px);
+ }</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>CSS Output</p>
+</div>
+    
+    <pre class="example__code"><code class="language-css"> .element {
+   position: absolute;
+   left: 0;
+   top: 10px;
+ }</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Throws</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Argument Error</p>
+</li>
+    
+  </ul>
+
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-absolute">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-absolute">absolute</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin absolute($args) { 
+  @include position(absolute, $args);
+ }"
+    data-collapsed="@mixin absolute($args) { ... }"><code>@mixin absolute($args) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_api.scss#L76-L78" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Shorthand for <code>@include position(absolute, args)</code>.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc"><p>A list of offset keywords and values.</p>
+</td>
+          <td data-label="type">
+          
+            List
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">See</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-position"><code>position</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-fixed">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-fixed">fixed</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin fixed($args) { 
+  @include position(fixed, $args);
+ }"
+    data-collapsed="@mixin fixed($args) { ... }"><code>@mixin fixed($args) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_api.scss#L90-L92" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Shorthand for <code>@include position(absolute, args)</code>.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc"><p>A list of offset keywords and values.</p>
+</td>
+          <td data-label="type">
+          
+            List
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">See</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-position"><code>position</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-relative">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-relative">relative</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin relative($args) { 
+  @include position(relative, $args);
+ }"
+    data-collapsed="@mixin relative($args) { ... }"><code>@mixin relative($args) { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_api.scss#L104-L106" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Shorthand for <code>@include position(absolute, args)</code>.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc"><p>A list of offset keywords and values.</p>
+</td>
+          <td data-label="type">
+          
+            List
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">See</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-position"><code>position</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-static">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-static">static</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin static() { 
+  @include position(relative, $args);
+ }"
+    data-collapsed="@mixin static() { ... }"><code>@mixin static() { ... }</code></pre>
+
+  
+    <a href="https://github.com/Undistraction/position/position/_api.scss#L114-L116" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Shorthand for <code>@include position(static)</code>.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">See</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-position"><code>position</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Pedr Browne</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+
+  
+
+
+    </div>
+
+    
+    
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <a class="project-info__name" href="https://github.com/Undistraction/Position">Position</a>
+          
+
+          <!-- Version -->
+          <span class="project-info__version"> - v0.2.14</span>
+
+          <!-- License -->
+          
+          <span class="project-info__license">, under
+            
+              MIT-LICENSE
+            
+            </span>
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+  </article>
+
+
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

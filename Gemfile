@@ -36,7 +36,6 @@ group :application do
   gem 'SassyBitwise'
   gem 'base.sass'
   gem 'flint-gs'
-  gem 'bourbon-compass'
   gem 'breakpoint'
   gem 'sassy-buttons'
   gem 'singularitygs'

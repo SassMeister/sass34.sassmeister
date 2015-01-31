@@ -1,0 +1,34 @@
+{
+  "name": "sassy-gridlover",
+  "version": "1.1.0",
+  "main": [
+    "sassy-gridlover/_config.scss",
+    "sassy-gridlover/_sassy-gridlover.scss"
+  ],
+  "keywords": [
+    "typography",
+    "baseline",
+    "modular",
+    "scale",
+    "vertical-rhythm",
+    "sass",
+    "scss",
+    "mixins",
+    "gridlover"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "homepage": "https://github.com/hiulit/Sassy-Gridlover",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.0",
+    "commit": "60f8152ef577e8b3e0645b25bbc462a7ebe17676"
+  },
+  "_source": "git://github.com/hiulit/Sassy-Gridlover.git",
+  "_target": ">=0.0.1",
+  "_originalSource": "sassy-gridlover"
+}

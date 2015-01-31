@@ -1,0 +1,48 @@
+///////////////////////////////////////////////////////
+// Mixins
+///////////////////////////////////////////////////////
+
+///////////////////////////////
+// media query
+///////////////////////////////
+
+@mixin media-query($breakpoint)
+	@for $i from 1 through length($bp-names)
+		$name: nth($bp-names,$i)
+		@if $breakpoint == $name
+			@media screen and (min-width: nth($bp-size,$i))
+				@content
+
+
+@mixin media-query-debug()
+	@media screen and (max-width: nth($bp-sizes,1))
+		@content
+	
+///////////////////////////////
+// font size mixin - inspired by Inuit CSS
+///////////////////////////////
+
+@mixin font-size($font-size, $line-height: true)
+	font-size: $font-size
+	font-size: ($font-size / $base-font-size) * 1rem
+
+	@if $line-height == true
+		line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size)
+
+///////////////////////////////
+// rem 
+///////////////////////////////		
+
+@mixin rem($property, $number)
+
+	#{$property}: $number
+	#{$property}: ($number / $base-font-size) * 1rem
+
+/////////////////////////////////////////////
+// hover mixin for hover & focus functionality
+/////////////////////////////////////////////
+
+@mixin hover()
+	&:hover,
+	&:focus
+		@content	

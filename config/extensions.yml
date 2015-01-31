@@ -33,18 +33,20 @@ Blend Modes:
   :homepage: https://github.com/heygrady/scss-blend-modes
 Bootstrap Sass:
   :gem: bootstrap-sass
-  :version: 3.3.1.0
+  :version: 3.3.3
   :import:
   - bootstrap
   :fingerprint: (bootstrap|bootstrap/*)
   :homepage: https://github.com/twbs/bootstrap-sass
 Bourbon:
-  :gem: bourbon-compass
-  :version: 4.0.2
+  :bower: bourbon
+  :paths:
+  - 
+  :version: 4.1.1
   :import:
   - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
-  :homepage: https://github.com/jedfoster/bourbon-compass
+  :homepage: http://bourbon.io
 Breakpoint:
   :gem: breakpoint
   :version: 2.5.0
@@ -54,7 +56,7 @@ Breakpoint:
   :homepage: https://github.com/Team-Sass/breakpoint
 Breakpoint Slicer:
   :gem: breakpoint-slicer
-  :version: 1.3.5
+  :version: 1.3.6
   :import:
   - breakpoint-slicer
   :fingerprint: breakpoint-slicer
@@ -70,11 +72,11 @@ CSShake:
   :bower: csshake
   :paths:
   - csshake/sass
-  :version: 44efe8f94a
+  :version: 0223e62c4f
   :import:
   - csshake
   :fingerprint: csshake
-  :homepage: https://github.com/elrumordelaluz/csshake
+  :homepage: http://elrumordelaluz.github.io/csshake/
 Ceasar Easing:
   :gem: ceaser-easing
   :version: '0.7'
@@ -98,7 +100,7 @@ Color Schemer:
   :homepage: https://github.com/scottkellum/color-schemer
 Compass:
   :gem: compass
-  :version: 1.0.1
+  :version: 1.0.3
   :import:
   - compass
   :fingerprint: (compass|compass/*)
@@ -148,10 +150,10 @@ Flint:
   :fingerprint: flint
   :homepage: http://flint.gs
 Foundation:
-  :bower: zurb/bower-foundation
+  :bower: foundation
   :paths:
   - foundation/scss
-  :version: 5.5.0
+  :version: 5.5.1
   :import:
   - foundation
   :fingerprint: foundation*
@@ -339,7 +341,7 @@ SassyBitwise:
   :homepage: http://github.com/HugoGiraudel/SassyBitwise
 SassyCast:
   :gem: SassyCast
-  :version: 1.1.0
+  :version: 1.1.1
   :import:
   - SassyCast
   :fingerprint: SassyCast
@@ -367,21 +369,21 @@ SassyMatrix:
   :homepage: https://github.com/HugoGiraudel/SassyMatrix/
 SassySort:
   :gem: SassySort
-  :version: 0.0.1
+  :version: 1.0.0
   :import:
   - SassySort
   :fingerprint: SassySort
   :homepage: https://github.com/HugoGiraudel/SassySort/
 SassyStrings:
   :gem: SassyStrings
-  :version: 1.1.3
+  :version: 1.1.4
   :import:
   - SassyString
   :fingerprint: SassyString
   :homepage: https://github.com/HugoGiraudel/SassyStrings
 Scut:
   :gem: scut
-  :version: 1.0.1
+  :version: 1.1.0
   :import:
   - scut
   :fingerprint: scut
@@ -405,7 +407,7 @@ Singularity Quick Spanner:
   :homepage: https://github.com/lolmaus/singularity-quick-spanner
 Singularity.gs:
   :gem: singularitygs
-  :version: 1.4.0
+  :version: 1.5.1
   :import:
   - singularitygs
   :fingerprint: singularitygs
@@ -436,20 +438,20 @@ Sunglass:
   :homepage: https://github.com/devatrox/Sunglass
 Susy:
   :gem: susy
-  :version: 2.1.3
+  :version: 2.2.2
   :import:
   - susy
   :fingerprint: susy
   :homepage: http://susy.oddbird.net/
 Toolkit:
   :gem: toolkit
-  :version: 2.6.0
+  :version: 2.7.0
   :import:
   - toolkit
   :fingerprint: toolkit
   :homepage: https://github.com/Snugug/toolkit
 'True':
-  :bower: ericam/true
+  :bower: 'true'
   :paths:
   - true/sass
   :version: 1.0.1

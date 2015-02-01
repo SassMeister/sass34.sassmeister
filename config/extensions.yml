@@ -40,8 +40,7 @@ Bootstrap Sass:
   :homepage: https://github.com/twbs/bootstrap-sass
 Bourbon:
   :bower: bourbon
-  :paths:
-  - 
+  :paths: 
   :version: 4.1.1
   :import:
   - bourbon/bourbon
@@ -202,7 +201,7 @@ MathSass:
   :version: 0.9.5
   :import:
   - math
-  :fingerprint: '^math'
+  :fingerprint: math
   :homepage: http://github.com/terkel/mathsass
 Modular Scale:
   :gem: modular-scale

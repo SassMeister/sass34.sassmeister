@@ -5,7 +5,7 @@ Sassy-Math:
   :fingerprint: sassy-math
 Sassy-Gridlover:
   :bower: sassy-gridlover
-  :import: 
+  :import:
     - sassy-gridlover
   :fingerprint: sassy-gridlover
   :paths:
@@ -129,8 +129,6 @@ Bourbon:
   :import:
     - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
-  :paths:
-    - 
 Breakpoint:
   :gem: breakpoint
   :import:

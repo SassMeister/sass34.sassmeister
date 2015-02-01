@@ -105,6 +105,14 @@ Color Schemer:
   - color-schemer
   :fingerprint: color-schemer
   :homepage: https://github.com/scottkellum/color-schemer
+ColorMeSass:
+  :bower: color-me-sass
+  :paths:
+  - color-me-sass
+  :version: fd9afc6c1f
+  :import: 
+  :fingerprint: color-me-sass
+  :homepage: 
 Compass:
   :gem: compass
   :version: 1.0.3

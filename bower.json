@@ -32,6 +32,7 @@
     "sassy-gridlover": ">=0.0.1",
     "juice": ">=0.0.1",
     "box": ">=0.0.1",
-    "jeet": ">=0.0.1"
+    "jeet": ">=0.0.1",
+    "color-me-sass": "https://github.com/RichardBray/color-me-sass.git"
   }
 }

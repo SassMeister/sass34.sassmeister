@@ -1,3 +1,10 @@
+Jeet:
+  :bower: jeet
+  :fingerprint: jeet
+  :imports:
+    - jeet/index
+  :paths:
+    - jeet/scss
 Box:
   :bower: box
   :fingerprint: '^box$'

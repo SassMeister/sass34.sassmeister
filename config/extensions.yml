@@ -202,6 +202,14 @@ Jacket:
   - jacket
   :fingerprint: jacket
   :homepage: http://github.com/robwierzbowski/jacket
+Jeet:
+  :bower: jeet
+  :paths:
+  - jeet/scss
+  :version: 6.1.2
+  :import: 
+  :fingerprint: jeet
+  :homepage: http://jeet.gs
 Juice:
   :bower: juice
   :paths:

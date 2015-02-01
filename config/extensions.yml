@@ -194,6 +194,14 @@ Jacket:
   - jacket
   :fingerprint: jacket
   :homepage: http://github.com/robwierzbowski/jacket
+Juice:
+  :bower: juice
+  :paths:
+  - juice/dist
+  :version: 1.0.0
+  :import: 
+  :fingerprint: juice
+  :homepage: http://juicynex.us/juice
 MathSass:
   :bower: mathsass
   :paths:

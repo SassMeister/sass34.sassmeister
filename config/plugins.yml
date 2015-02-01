@@ -1,3 +1,10 @@
+Juice:
+  :bower: juice
+  :fingerprint: juice
+  :imports:
+    - juice
+  :paths:
+    - juice/dist
 Sassy-Math:
   :gem: sassy-math
   :import: 

@@ -202,7 +202,7 @@ MathSass:
   :version: 0.9.5
   :import:
   - math
-  :fingerprint: math
+  :fingerprint: '^math'
   :homepage: http://github.com/terkel/mathsass
 Modular Scale:
   :gem: modular-scale
@@ -332,6 +332,13 @@ Sassy-Gridlover:
   - sassy-gridlover
   :fingerprint: sassy-gridlover
   :homepage: https://github.com/hiulit/Sassy-Gridlover
+Sassy-Math:
+  :gem: sassy-math
+  :version: 1.5.1
+  :import:
+  - sassy-math
+  :fingerprint: sassy-math
+  :homepage: https://github.com/scottkellum/Sassy-math
 SassyBitwise:
   :gem: SassyBitwise
   :version: 1.1.2

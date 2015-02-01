@@ -1,3 +1,8 @@
+Sassy-Math:
+  :gem: sassy-math
+  :import: 
+    - sassy-math
+  :fingerprint: sassy-math
 Sassy-Gridlover:
   :bower: sassy-gridlover
   :import: 

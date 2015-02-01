@@ -8,7 +8,7 @@ gem 'sass', '~> 3.4.0.rc.1'
 gem 'compass', "~>1.0.0.alpha.18"
 gem 'ffi', "= 1.9.0"
 gem 'sassmeister', :github => 'SassMeister/ruby-compiler'
-#gem 'sassmeister', :path => '../sassmeister-compiler'
+# gem 'sassmeister', :path => '../sassmeister-compiler'
 
 group :development, :test do
   gem 'rake'
@@ -30,6 +30,7 @@ group :production do
 end
 
 group :application do
+  gem 'sassy-math'
   gem 'sass-a11y'
   gem 'singularity-quick-spanner'
   gem 'color-hacker'

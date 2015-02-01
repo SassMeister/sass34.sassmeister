@@ -266,6 +266,7 @@ DEPENDENCIES
   sassmeister!
   sassy-buttons
   sassy-maps
+  sassy-math
   sassy-text-shadow
   scut
   sinatra

@@ -30,6 +30,7 @@
     "position": "~0.2.3",
     "true": "https://github.com/ericam/true.git",
     "sassy-gridlover": ">=0.0.1",
-    "juice": ">=0.0.1"
+    "juice": ">=0.0.1",
+    "box": ">=0.0.1"
   }
 }

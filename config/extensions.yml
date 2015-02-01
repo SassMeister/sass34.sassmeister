@@ -46,6 +46,14 @@ Bourbon:
   - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
   :homepage: http://bourbon.io
+Box:
+  :bower: box
+  :paths:
+  - box/sass
+  :version: 0.1.2
+  :import: 
+  :fingerprint: ^box$
+  :homepage: https://github.com/Undistraction/box
 Breakpoint:
   :gem: breakpoint
   :version: 2.5.0

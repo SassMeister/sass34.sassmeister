@@ -1,0 +1,31 @@
+{
+  "name": "box",
+  "version": "0.1.2",
+  "homepage": "https://github.com/Undistraction/box",
+  "authors": [
+    "Pedr Browne <pedr.browne@gmail.com>"
+  ],
+  "description": "A set of mixins for setting an element's box properties with support for custom units",
+  "keywords": [
+    "sass",
+    "box-model"
+  ],
+  "license": "MIT",
+  "main": "sass/_box.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.2",
+    "commit": "f8833e329d7f1cf13b0bc9b009b820d9933bbc47"
+  },
+  "_source": "git://github.com/Undistraction/box.git",
+  "_target": ">=0.0.1",
+  "_originalSource": "box"
+}

@@ -1,3 +1,10 @@
+Box:
+  :bower: box
+  :fingerprint: '^box$'
+  :imports:
+    - box
+  :paths:
+    - box/sass
 Juice:
   :bower: juice
   :fingerprint: juice

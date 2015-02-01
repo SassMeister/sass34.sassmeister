@@ -1,3 +1,10 @@
+include-media:
+  :bower: include-media
+  :fingerprint: include-media
+  :imports:
+    - include-media
+  :paths:
+    - include-media/dist
 ColorMeSass:
   :bower: color-me-sass
   :fingerprint: color-me-sass

@@ -1,4 +1,4 @@
-include-media:
+'Include Media':
   :bower: include-media
   :fingerprint: include-media
   :imports:

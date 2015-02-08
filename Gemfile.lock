@@ -31,7 +31,7 @@ GEM
     SassyStrings (1.1.4)
       compass (>= 1.0.0.alpha.18)
       sass (>= 3.4)
-    autoprefixer-rails (5.1.0)
+    autoprefixer-rails (5.1.4)
       execjs
       json
     base.sass (1.6.0)
@@ -92,7 +92,7 @@ GEM
     css-slideshow (0.2.0)
       compass (>= 0.10.0.rc3)
     dalli (2.6.4)
-    execjs (2.2.2)
+    execjs (2.3.0)
     fakeredis (0.5.0)
       redis (~> 3.0)
     fancy-buttons (1.2.0)

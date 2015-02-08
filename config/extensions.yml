@@ -41,7 +41,7 @@ Bootstrap Sass:
 Bourbon:
   :bower: bourbon
   :paths: 
-  :version: 4.1.1
+  :version: 4.2.0
   :import:
   - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
@@ -79,7 +79,7 @@ CSShake:
   :bower: csshake
   :paths:
   - csshake/sass
-  :version: 0223e62c4f
+  :version: 616a877957
   :import:
   - csshake
   :fingerprint: csshake
@@ -203,6 +203,14 @@ Harsh:
   - harsh
   :fingerprint: harsh
   :homepage: http://www.bookcasey.com/harsh/
+Include Media:
+  :bower: include-media
+  :paths:
+  - include-media/dist
+  :version: 1.1.2
+  :import: 
+  :fingerprint: include-media
+  :homepage: https://github.com/eduardoboucas/import-media
 Jacket:
   :gem: jacket
   :version: 1.0.0
@@ -538,11 +546,3 @@ Zen Grids:
   - zen
   :fingerprint: (zen|zen-grids)
   :homepage: http://zengrids.com
-include-media:
-  :bower: include-media
-  :paths:
-  - include-media/dist
-  :version: 1.1.2
-  :import: 
-  :fingerprint: include-media
-  :homepage: https://github.com/eduardoboucas/import-media

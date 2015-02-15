@@ -2,7 +2,7 @@
   :bower: include-media
   :fingerprint: include-media
   :imports:
-    - include-media
+    - 'include-media'
   :paths:
     - include-media/dist
 ColorMeSass:

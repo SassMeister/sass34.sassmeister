@@ -51,7 +51,8 @@ Box:
   :paths:
   - box/sass
   :version: 0.1.2
-  :import: 
+  :import:
+  - box
   :fingerprint: ^box$
   :homepage: https://github.com/Undistraction/box
 Breakpoint:
@@ -110,7 +111,8 @@ ColorMeSass:
   :paths:
   - color-me-sass
   :version: fd9afc6c1f
-  :import: 
+  :import:
+  - color-me-sass
   :fingerprint: color-me-sass
   :homepage: 
 Compass:
@@ -208,7 +210,8 @@ Include Media:
   :paths:
   - include-media/dist
   :version: 1.1.2
-  :import: 
+  :import:
+  - include-media
   :fingerprint: include-media
   :homepage: https://github.com/eduardoboucas/import-media
 Jacket:
@@ -223,7 +226,8 @@ Jeet:
   :paths:
   - jeet/scss
   :version: 6.1.2
-  :import: 
+  :import:
+  - jeet/index
   :fingerprint: jeet
   :homepage: http://jeet.gs
 Juice:
@@ -231,7 +235,8 @@ Juice:
   :paths:
   - juice/dist
   :version: 1.0.0
-  :import: 
+  :import:
+  - juice
   :fingerprint: juice
   :homepage: http://juicynex.us/juice
 MathSass:
@@ -245,11 +250,11 @@ MathSass:
   :homepage: http://github.com/terkel/mathsass
 Modular Scale:
   :gem: modular-scale
-  :version: 2.0.5
+  :version: 2.0.6
   :import:
   - modular-scale
   :fingerprint: modular-scale
-  :homepage: http://extension.com
+  :homepage: http://modularscale.com
 Neat:
   :gem: neat-compass
   :version: 1.6.0
@@ -429,7 +434,7 @@ SassyStrings:
   :homepage: https://github.com/HugoGiraudel/SassyStrings
 Scut:
   :gem: scut
-  :version: 1.1.0
+  :version: 1.1.2
   :import:
   - scut
   :fingerprint: scut
@@ -518,7 +523,7 @@ Typesettings:
   :bower: typesettings
   :paths:
   - typesettings/
-  :version: 2.3.1
+  :version: 2.3.3
   :import:
   - typesettings
   :fingerprint: typesettings

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/SassMeister/ruby-compiler.git
-  revision: 7ff503613db3b9364e3be42be5a0383911244d2c
+  revision: 7426bba537f366f59010dff47675a273c317724b
   specs:
     sassmeister (0.0.1)
       dalli (~> 2.6.4)
@@ -31,7 +31,7 @@ GEM
     SassyStrings (1.1.4)
       compass (>= 1.0.0.alpha.18)
       sass (>= 3.4)
-    autoprefixer-rails (5.1.4)
+    autoprefixer-rails (5.1.5)
       execjs
       json
     base.sass (1.6.0)
@@ -116,7 +116,7 @@ GEM
     kgio (2.9.3)
     memcachier (0.0.2)
     method_source (0.8.2)
-    modular-scale (2.0.5)
+    modular-scale (2.0.6)
       compass (>= 0.12.0)
     multi_json (1.10.1)
     neat-compass (1.6.0)
@@ -148,7 +148,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redis (3.2.0)
+    redis (3.2.1)
     responsive-modular-scale (0.2.1)
       modular-scale (>= 2.0.4)
     responsive-sass (0.1.1)
@@ -159,7 +159,7 @@ GEM
     salsa (0.0.1)
       compass (>= 0.12.1)
       sass (>= 3.2.0)
-    sass (3.4.11)
+    sass (3.4.12)
     sass-a11y (0.1.0)
       sass (~> 3.4)
       sassy-math (~> 1.5)
@@ -171,7 +171,7 @@ GEM
       compass (>= 0.11)
     sassy-text-shadow (0.0.4)
       compass (>= 0.11.5)
-    scut (1.1.0)
+    scut (1.1.2)
       sass (~> 3.2, >= 3.2.0)
     sinatra (1.4.5)
       rack (~> 1.4)

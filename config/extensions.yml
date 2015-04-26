@@ -338,6 +338,15 @@ Sass Color Helpers:
   - color-helpers
   :fingerprint: color-helpers
   :homepage: https://github.com/voxpelli/sass-color-helpers
+Sassdash:
+  :bower: sassdash
+  :paths:
+  - sassdash/scss
+  :version: 0.4.0
+  :import:
+  - sassdash
+  :fingerprint: sassdash
+  :homepage: 
 Sassifaction:
   :gem: Sassifaction
   :version: 0.0.4

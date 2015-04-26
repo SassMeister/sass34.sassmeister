@@ -1,3 +1,10 @@
+Sassdash:
+  :bower: 'sassdash'
+  :fingerprint: sassdash
+  :imports:
+    - sassdash
+  :paths:
+    - sassdash/scss
 'Include Media':
   :bower: include-media
   :fingerprint: include-media

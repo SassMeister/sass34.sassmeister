@@ -1,7 +1,7 @@
 {
   "name": "juice",
   "description": "SASS Mixins for Life",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://juicynex.us/juice",
   "keywords": [
     "CSS",
@@ -26,11 +26,15 @@
     "js",
     "sass"
   ],
-  "_release": "1.0.0",
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "bootstrap-sass-official": "~3.3.3"
+  },
+  "_release": "1.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.0",
-    "commit": "9f1623134d7ebde746bc5486130e9a60a8ca2875"
+    "tag": "v1.0.1",
+    "commit": "93953d2b9918455942b64db2fe16e65b730690c2"
   },
   "_source": "git://github.com/kjbrum/juice.git",
   "_target": ">=0.0.1",

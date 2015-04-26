@@ -230,7 +230,11 @@ p, ul, ol, pre, table, blockquote {
 
 ## Changelog
 
-### 1.1.0 (October 20th 2014)
+### v1.2.0 (February 25th 2015)
+
+* Upgraded to SassDoc v2.1.0
+
+### v1.1.0 (October 20th 2014)
 
 * Added [SassDoc](http://sassdoc.com/) documentation [#6](https://github.com/hiulit/Sassy-Gridlover/issues/6).
 * Applied naming conventions to constants [#5](https://github.com/hiulit/Sassy-Gridlover/issues/5).
@@ -238,12 +242,12 @@ p, ul, ol, pre, table, blockquote {
 * Changed strings for lengths [#3](https://github.com/hiulit/Sassy-Gridlover/issues/3)
 * Added `!default` to configurable variables [#2](https://github.com/hiulit/Sassy-Gridlover/issues/2)
 
-### 1.0.0 (October 6th 2014)
+### v1.0.0 (October 6th 2014)
 
 * Released stable version.
 * Added bower installation support.
 
-### 0.1.0 (September 2nd 2014)
+### v0.1.0 (September 2nd 2014)
 
 * Initial commit.
 
@@ -260,7 +264,7 @@ Thanks to:
 * [Gridlover app](http://www.gridlover.net/app/) - Created by [Tuomas Jomppanen](http://twitter.com/tuomasj) & [Ville Vanninen](http://twitter.com/sakamies).
 * [Sassy-math](https://github.com/Team-Sass/Sassy-math) [&copy; 2012](https://github.com/Team-Sass/Sassy-math#license) - For the `@function exponent()`. Created by [Sam Richard](https://github.com/Snugug), [Mario Valencia](https://github.com/sultancillo) and [Scott Kellum](https://github.com/scottkellum)
 * Marc Mintel ([@marcmintel](https://twitter.com/marcmintel)) for his amazing article on how to [Write Sass plugins like a pro](https://medium.com/@marcmintel/write-sass-plugins-like-a-pro-c765ecf3af27).
-* Hugo Giraudel ([@hugogiraudel](hugogiraudel)) for helping with issues and [SassDoc](http://sassdoc.com/).
+* Hugo Giraudel ([@hugogiraudel](https://twitter.com/hugogiraudel)) for helping with issues and [SassDoc](http://sassdoc.com/).
 
 ## Unlicense
 

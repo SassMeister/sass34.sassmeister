@@ -1,9 +1,16 @@
 {
   "name": "sassy-gridlover",
-  "version": "1.1.0",
+  "description": "Super easy to use Sass mixins to establish a typographic system with modular scale and vertical rhythm. Based on the Gridlover app.",
+  "version": "1.2.0",
   "main": [
     "sassy-gridlover/_config.scss",
     "sassy-gridlover/_sassy-gridlover.scss"
+  ],
+  "license": "Unlicense",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
   ],
   "keywords": [
     "typography",
@@ -16,17 +23,23 @@
     "mixins",
     "gridlover"
   ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "components"
+  "authors": [
+    {
+      "name": "hiulit",
+      "email": "hiulit@gmail.com",
+      "homepage": "https://github.com/hiulit"
+    }
   ],
   "homepage": "https://github.com/hiulit/Sassy-Gridlover",
-  "_release": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hiulit/Sassy-Gridlover.git"
+  },
+  "_release": "1.2.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.1.0",
-    "commit": "60f8152ef577e8b3e0645b25bbc462a7ebe17676"
+    "tag": "v1.2.0",
+    "commit": "db852b8a824863190596666bd06d40ff16ff08c1"
   },
   "_source": "git://github.com/hiulit/Sassy-Gridlover.git",
   "_target": ">=0.0.1",

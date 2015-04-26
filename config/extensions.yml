@@ -33,7 +33,7 @@ Blend Modes:
   :homepage: https://github.com/heygrady/scss-blend-modes
 Bootstrap Sass:
   :gem: bootstrap-sass
-  :version: 3.3.3
+  :version: 3.3.4.1
   :import:
   - bootstrap
   :fingerprint: (bootstrap|bootstrap/*)
@@ -41,7 +41,7 @@ Bootstrap Sass:
 Bourbon:
   :bower: bourbon
   :paths: 
-  :version: 4.2.0
+  :version: 4.2.2
   :import:
   - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
@@ -161,7 +161,7 @@ Fittext:
   :homepage: http://www.bookcasey.com/fittext/
 Flint:
   :gem: flint-gs
-  :version: 2.1.2
+  :version: 2.2.0
   :import:
   - flint
   :fingerprint: flint
@@ -234,7 +234,7 @@ Juice:
   :bower: juice
   :paths:
   - juice/dist
-  :version: 1.0.0
+  :version: 1.0.1
   :import:
   - juice
   :fingerprint: juice
@@ -371,7 +371,7 @@ Sassy-Gridlover:
   :bower: sassy-gridlover
   :paths:
   - sassy-gridlover/sassy-gridlover
-  :version: 1.1.0
+  :version: 1.2.0
   :import:
   - sassy-gridlover
   :fingerprint: sassy-gridlover
@@ -458,7 +458,7 @@ Singularity Quick Spanner:
   :homepage: https://github.com/lolmaus/singularity-quick-spanner
 Singularity.gs:
   :gem: singularitygs
-  :version: 1.5.1
+  :version: 1.6.2
   :import:
   - singularitygs
   :fingerprint: singularitygs
@@ -496,7 +496,7 @@ Susy:
   :homepage: http://susy.oddbird.net/
 Toolkit:
   :gem: toolkit
-  :version: 2.7.0
+  :version: 2.9.0
   :import:
   - toolkit
   :fingerprint: toolkit
@@ -523,7 +523,7 @@ Typesettings:
   :bower: typesettings
   :paths:
   - typesettings/
-  :version: 2.3.3
+  :version: 2.4.0
   :import:
   - typesettings
   :fingerprint: typesettings

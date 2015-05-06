@@ -1,0 +1,25 @@
+@include test-module('_add') {
+    @include test('should add two numbers together') {
+        @include assert-equal(_add(6, 4), 10);
+    }
+
+    @include test('should coerce numerical strings to numbers') {
+        @include assert-equal(_add(6, '14'), 20);
+    }
+
+    @include test('should be chainable') {
+        @include assert-equal(_(1, add 2), 3);
+    }
+
+    @include test('should work with units') {
+        @include assert-equal(_add(6px, 4px), 10px);
+    }
+
+    @include test('should work across similar units') {
+        @include assert-equal(_add(3s, 101ms), 3.101s);
+
+        @include assert-equal(_add(101ms, 3s), 3101ms);
+
+        @include assert-equal(_add(6px, 4), 10px);
+    }
+}

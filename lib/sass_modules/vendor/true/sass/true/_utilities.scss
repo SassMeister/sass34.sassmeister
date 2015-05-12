@@ -2,11 +2,13 @@
 // =========
 
 // Add map values together
-@function map-add(
+@function _true-map-increment(
   $base,
   $add
 ) {
-  @each $key, $value in $add {
+  @each $key in map-keys($add) {
+    $value: map-get($add, $key);
+
     @if $value {
       $base-value: map-get($base, $key);
       $new-value: if($base-value, $base-value + $value, $value);
@@ -18,7 +20,10 @@
 }
 
 // Split a string
-@function str-split($string, $substring) {
+@function _true-str-split(
+  $string,
+  $substring
+) {
   $strings: ();
   $found-at: str-index($string, $substring);
   @while $found-at {
@@ -30,10 +35,15 @@
   @return $strings;
 }
 
+
 // Check for strict equality
-@function is-equal($one, $two) {
+@function _true-is-equal($one, $two) {
   @if type-of($one) == number and type-of($two) == number {
-    @return $one == $two and unit($one) == unit($two);
+    @if unit($one) == unit($two) {
+      @return $one == $two;
+    } @else {
+      @return false;
+    }
   } @else {
     @return $one == $two;
   }

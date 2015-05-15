@@ -1,6 +1,6 @@
 {
   "name": "true",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "sass/_true.scss",
   "description": "Unit testing for Sass.",
   "authors": [
@@ -25,11 +25,11 @@
     "test",
     "Rakefile"
   ],
-  "_release": "2.0.1",
+  "_release": "2.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "2.0.1",
-    "commit": "f77279fc85522c184e69abdb063fb5a89d1c5cdd"
+    "tag": "2.0.2",
+    "commit": "325b2b5a626caa624f7a51ba028f674f76fb6a28"
   },
   "_source": "https://github.com/ericam/true.git",
   "_target": "*",

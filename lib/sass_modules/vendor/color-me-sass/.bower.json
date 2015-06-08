@@ -7,7 +7,7 @@
     "branch": "master",
     "commit": "fd9afc6c1fe03f3eee78449aafdfd09431bd9e03"
   },
-  "_source": "https://github.com/RichardBray/color-me-sass.git",
+  "_source": "git://github.com/RichardBray/color-me-sass.git",
   "_target": "*",
-  "_originalSource": "https://github.com/RichardBray/color-me-sass.git"
+  "_originalSource": "RichardBray/color-me-sass"
 }

@@ -2,7 +2,7 @@
 // foundation.zurb.com
 // Licensed under MIT Open Source
 
-@import 'global';
+@import "global";
 
 //
 // @variables
@@ -13,10 +13,10 @@ $include-html-panel-classes: $include-html-classes !default;
 $panel-bg: scale-color($white, $lightness: -5%) !default;
 $panel-border-style: solid !default;
 $panel-border-size: 1px !default;
-$callout-panel-bg: scale-color($primary-color, $lightness: 94%) !default;
 
 // We use this % to control how much we darken things on hover
-$panel-border-color: scale-color($panel-bg, $lightness: -11%) !default;
+$panel-function-factor: -11% !default;
+$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor) !default;
 
 // We use these to set default inner padding and bottom margin
 $panel-margin-bottom: rem-calc(20) !default;
@@ -28,7 +28,6 @@ $panel-font-color-alt: $white !default;
 
 $panel-header-adjust: true !default;
 $callout-panel-link-color: $primary-color !default;
-$callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightness: -14%) !default;
 //
 // @mixins
 //
@@ -36,20 +35,14 @@ $callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightne
 // $bg - Sets the panel background color. Default: $panel-pg || scale-color($white, $lightness: -5%) !default
 // $padding - Sets the panel padding amount. Default: $panel-padding || rem-calc(20)
 // $adjust - Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust || true
-@mixin panel($bg:$panel-bg, $padding:$panel-padding, $adjust:$panel-header-adjust, $border:true) {
+@mixin panel($bg:$panel-bg, $padding:$panel-padding, $adjust:$panel-header-adjust) {
 
   @if $bg {
     $bg-lightness: lightness($bg);
 
-    @if $border {
-      border-style: $panel-border-style;
-      border-width: $panel-border-size;
-      border-color: $panel-border-color;
-    } @else {
-      border-style: none;
-      border-width: 0;
-    }
-
+    border-style: $panel-border-style;
+    border-width: $panel-border-size;
+    border-color: scale-color($bg, $lightness: $panel-function-factor);
     margin-bottom: $panel-margin-bottom;
     padding: $padding;
 
@@ -58,20 +51,20 @@ $callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightne
     @else { color: $panel-font-color-alt; }
 
     // Respect the padding, fool.
-    > :first-child { margin-top: 0; }
-    > :last-child { margin-bottom: 0; }
+    &>:first-child { margin-top: 0; }
+    &>:last-child { margin-bottom: 0; }
 
     @if $adjust {
       // We set the font color based on the darkness of the bg.
-      @if $bg-lightness >= 50% {
-        h1, h2, h3, h4, h5, h6, p, li, dl { color: $panel-font-color; }
+      @if $bg-lightness >= 50% { 
+        h1,h2,h3,h4,h5,h6,p,li,dl { color: $panel-font-color; }
       }
-      @else {
-        h1, h2, h3, h4, h5, h6, p, li, dl { color: $panel-font-color-alt; }
+      @else { 
+        h1,h2,h3,h4,h5,h6,p,li,dl { color: $panel-font-color-alt; }
       }
 
       // reset header line-heights for panels
-      h1, h2, h3, h4, h5, h6 {
+      h1,h2,h3,h4,h5,h6 {
         line-height: 1; margin-bottom: rem-calc(20) / 2;
         &.subheader { line-height: 1.4; }
       }
@@ -86,14 +79,9 @@ $callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightne
     .panel { @include panel;
 
       &.callout {
-        @include panel($callout-panel-bg);
+        @include panel(scale-color($primary-color, $lightness: 94%));
         a:not(.button) {
           color: $callout-panel-link-color;
-
-          &:hover,
-          &:focus {
-            color: $callout-panel-link-color-hover;
-          }
         }
       }
 

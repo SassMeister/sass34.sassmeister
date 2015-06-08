@@ -8,7 +8,7 @@
     "tag": "v0.4.2",
     "commit": "fe2fc0913af05c61336ecd5c0b04dd85e1beada9"
   },
-  "_source": "https://github.com/davidkpiano/sassdash.git",
+  "_source": "git://github.com/davidkpiano/sassdash.git",
   "_target": "*",
-  "_originalSource": "https://github.com/davidkpiano/sassdash.git"
+  "_originalSource": "davidkpiano/sassdash"
 }

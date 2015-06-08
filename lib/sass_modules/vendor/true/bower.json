@@ -10,11 +10,7 @@
   ],
   "homepage": "http://ericsuzanne.com/true",
   "keywords": [
-    "unit-test",
-    "test",
-    "sass",
-    "libsass",
-    "TDD"
+    "unit-test", "test", "sass", "libsass", "TDD"
   ],
   "license": "BSD-3-Clause",
   "ignore": [
@@ -24,14 +20,5 @@
     "*.gemspec",
     "test",
     "Rakefile"
-  ],
-  "_release": "2.0.2",
-  "_resolution": {
-    "type": "version",
-    "tag": "2.0.2",
-    "commit": "325b2b5a626caa624f7a51ba028f674f76fb6a28"
-  },
-  "_source": "git://github.com/ericam/true.git",
-  "_target": "~2.0.1",
-  "_originalSource": "true"
+  ]
 }

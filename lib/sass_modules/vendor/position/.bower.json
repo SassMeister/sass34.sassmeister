@@ -1,6 +1,6 @@
 {
   "name": "position",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "homepage": "https://github.com/Undistraction/position",
   "authors": [
     "Pedr Browne <pedr.browne@gmail.com>"
@@ -18,11 +18,11 @@
     "test",
     "tests"
   ],
-  "_release": "0.2.14",
+  "_release": "0.2.15",
   "_resolution": {
     "type": "version",
-    "tag": "0.2.14",
-    "commit": "cff51fb2826709195c0c4a6c67930743de8b7df1"
+    "tag": "0.2.15",
+    "commit": "c541c1602b78cbc8831cdab88dcd6d4089c78e71"
   },
   "_source": "git://github.com/Undistraction/position.git",
   "_target": "~0.2.3",

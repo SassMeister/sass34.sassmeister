@@ -1,0 +1,7 @@
+@import 'demo-base';
+
+// *** layout: center *** //
+
+.example-center { @include center(child div left);
+  > div { width: 200px; padding: 10px; }
+}

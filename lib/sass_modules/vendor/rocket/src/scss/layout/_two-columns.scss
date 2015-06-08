@@ -1,0 +1,49 @@
+// fixed columns
+@mixin two-columns($key: left 300px gutter 20px) {
+  $direction: left; 
+  $aside-width: 300px; 
+  $gutter: 20px;
+  $total: 320px;
+
+  @if type-of($key) == number {
+    $aside-width: $key;
+  } @else if type-of($key) == list {
+
+    // set up gutter
+    @if index($key, gutter) {
+      $gutter: get-next($key, gutter);
+      $key: reject($key, gutter);
+      $key: reject($key, $gutter);
+    }
+
+    // set up direction 
+    @each $item in left, right {
+      @if index($key, $item) { 
+        $direction: $item;
+        $key: reject($key, $item);
+      } 
+    }
+
+    // set up aside width
+    $aside-width: nth($key, 1);
+  }
+
+  $total: ($aside-width + $gutter);
+
+  // output
+  @at-root (without: media) { @extend %clearfix; }
+  padding-#{$direction}: $total;
+
+  // main
+  > [data-col-main] {
+    float: opposite($direction);
+    width: 100%;
+  }
+
+  // aside
+  > [data-col-aside] {
+    float: $direction;
+    width: $aside-width;
+    margin-#{$direction}: - $total;
+  }
+}

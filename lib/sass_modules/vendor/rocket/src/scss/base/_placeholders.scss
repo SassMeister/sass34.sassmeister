@@ -1,0 +1,14 @@
+// placeholder
+//-----------------------------
+
+// clearfix
+%clearfix { @include clearfix; }
+
+// link hover
+%hover-no-text-decoration {&:hover { text-decoration: none; } }
+
+// transition
+%global-transition {
+  -webkit-transition: all $global-animation-duration $global-bezier 0s;
+  transition: all $global-animation-duration $global-bezier 0s;
+}

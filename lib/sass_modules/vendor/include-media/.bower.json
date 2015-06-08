@@ -36,6 +36,6 @@
     "commit": "c3de2cb99d7903e7f1ec03d47d425e4640841f74"
   },
   "_source": "git://github.com/eduardoboucas/include-media.git",
-  "_target": ">=0.0.1",
+  "_target": "~1.3.0",
   "_originalSource": "include-media"
 }

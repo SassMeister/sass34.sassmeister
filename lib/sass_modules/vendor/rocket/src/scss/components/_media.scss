@@ -1,0 +1,53 @@
+// *** media *** //
+
+@mixin media(
+	$key: 10px '*'
+){
+	$gutter: 10px;
+	$child: ();
+	$position: top;
+
+	@if type-of($key) == number {
+		$gutter: $key;
+	} @else if type-of($key) == list {
+		@each $item in $key {
+			@if type-of($item) == number {
+				$gutter: $item;
+				$key: reject($key, $item);
+			}
+		}
+		@each $item in top, middle, bottom {
+			@if index($key, $item) {
+				$position: $item;
+				$key: reject($key, $item);
+			}
+		}
+		@if index($key, 'child') {
+			$key: reject($key, 'child');
+		}
+		$child: $key;
+	}
+
+	// if no child
+	@if length($child) == 0 {
+		$child: append($child, '*');
+	}
+
+	// output
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
+
+	@for $i from 1 through length($child) {
+		$item: nth($child, $i);
+		
+		> #{$item} {
+			display: table-cell;
+			vertical-align: $position;
+			@if $gutter and $gutter != 0 and $gutter != '0px' {
+				padding-right: $gutter;
+				&:last-child { padding-right: 0; }
+			}
+		}
+	}
+}

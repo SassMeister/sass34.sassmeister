@@ -1,0 +1,35 @@
+// *** visibility *** //
+
+// accept maximum 6 numbers
+@mixin visible($key){
+  $empty: ();
+  @if type-of($key) == number {
+    // output
+    @include breakpoint('max' $key) { display: none; }
+  } @else if type-of($key) == list {
+    @if nth($key, 1) == 0 {
+      $key: reject($key, 0);
+    } @else {
+      // append 0 to $empty
+      $empty: append($empty, 0);
+
+      // append $key to $empty 
+      @for $i from 1 through length($key) {
+        $empty: append($empty, nth($key, $i));
+      }
+
+      // give the value of $empty to $key
+      $key: $empty;
+    }
+    @include breakpoint($key) { display: none; }
+  }
+}
+
+@mixin hidden($key){
+  @if type-of($key) == number {
+    // output
+    @include breakpoint('min' $key) { display: none; }
+  } @else if type-of($key) == list {
+    @include breakpoint($key) { display: none; }
+  }
+}

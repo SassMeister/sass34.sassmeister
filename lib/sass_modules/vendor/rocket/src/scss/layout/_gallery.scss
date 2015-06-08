@@ -1,0 +1,69 @@
+@import 'wrap';
+
+@mixin gallery($key){
+  $per-row: 1;
+  $gutter: map-get($layout, gutter);
+  $child: '*';
+  $position: middle;
+  $keep: false;
+
+  @if type-of($key) == number {
+    $per-row: $key;  
+  } @else if type-of($key) == list {
+
+    // set up per-row, gutter
+    @for $i from 1 through length($key) {
+      $val: nth($key, $i);
+
+      @if type-of($val) == number {
+        @if unitless($val) {
+          $per-row: $val;
+        } @else {
+          $gutter: $val;
+        }
+      }
+    }
+
+    // set up position
+    @each $this-position in middle, bottom {
+      @if index($key, $this-position) { 
+        $position: $this-position;
+      } 
+    }
+
+    // set up child
+    @if index($key, child) {
+      $child: get-next($key, child);
+    }
+
+    // set up keep
+    @if index($key, keep) {
+      $keep: true;
+    }
+  }
+
+  // set up gallery container
+  @if not $keep {
+    @if $gutter and $gutter != 0 {
+      @include wrap($gutter);
+    }
+  }
+  @at-root (without: media) { @extend %layout-wrap; }
+
+  // set up gallery items
+  > #{$child} {
+    width: percentage(1 / $per-row);
+    @at-root (without: media) { @extend %layout-span; }
+
+    // set up gallery gutter
+    @if not $keep {
+      @if $gutter and $gutter != 0{
+        @if $position == bottom { 
+          padding: 0 ($gutter / 2) $gutter; 
+        } @else { 
+          padding: ($gutter / 2); 
+        }
+      }
+    }
+  }
+}

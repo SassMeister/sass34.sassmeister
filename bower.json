@@ -35,6 +35,10 @@
     "jeet": ">=0.0.1",
     "color-me-sass": "RichardBray/color-me-sass",
     "include-media": "~1.3.0",
-    "sassdash": "davidkpiano/sassdash"
+    "sassdash": "davidkpiano/sassdash",
+    "sass-vary": "*",
+    "gridle": "~1.3.38",
+    "rocket": "~2.0.0",
+    "sass-maps-plus": "lunelson/sass-maps-plus"
   }
 }

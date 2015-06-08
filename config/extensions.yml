@@ -191,6 +191,15 @@ Grid Coordinates:
   - grid-coordinates
   :fingerprint: grid-coordinates
   :homepage: http://grid-coordinates.com/
+Gridle:
+  :bower: gridle
+  :paths:
+  - gridle/sass
+  :version: 1.3.38
+  :import:
+  - gridle/gridle
+  :fingerprint: gridle/gridle
+  :homepage: http://gridle.org
 Guff:
   :gem: guff-compass
   :version: 1.0.0
@@ -315,6 +324,15 @@ Responsive Sass:
   - responsive-sass
   :fingerprint: responsive-sass
   :homepage: http://ntreadway.github.com/responsive-sass/welcome
+Rocket:
+  :bower: rocket
+  :paths:
+  - rocket/src/scss
+  :version: 2.0.0
+  :import:
+  - rocket
+  :fingerprint: rocket
+  :homepage: https://github.com/ganlanyuan/rocket
 Salsa:
   :gem: salsa
   :version: 0.0.1
@@ -537,6 +555,15 @@ UtilityBelt:
   - utility-belt
   :fingerprint: utility-belt
   :homepage: https://github.com/dmtintner/UtilityBelt
+Vary:
+  :bower: sass-vary
+  :paths:
+  - sass-vary
+  :version: 5190d7b140
+  :import:
+  - vary
+  :fingerprint: vary
+  :homepage: https://github.com/jaicab/sass-vary
 YIQ Color Contrast:
   :gem: compass-yiq-color-contrast
   :version: 1.1.1
@@ -551,3 +578,12 @@ Zen Grids:
   - zen
   :fingerprint: (zen|zen-grids)
   :homepage: http://zengrids.com
+sass-maps-plus:
+  :bower: sass-maps-plus
+  :paths:
+  - sass-maps-plus
+  :version: e4d32a1dc2
+  :import:
+  - sass-maps-plus
+  :fingerprint: sass-maps-plus
+  :homepage: 

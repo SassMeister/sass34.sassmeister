@@ -1,0 +1,138 @@
+// *** span *** //
+
+@mixin span($key){
+	$column: 0;
+	$columns: map-get($layout, columns);
+	$gutter: map-get($layout, gutter);
+	$location: false;
+	$move: false;
+	$isolate: false;
+	$float: left;
+	$last: false;
+	$keep: false;
+
+	@if type-of($key) == number {
+		$column: $key;
+	} @else if type-of($key) == list {
+
+		// set up direction
+		@each $direction in left, right {
+      @if index($key, $direction) { 
+        $float: $direction;
+      } 
+		}
+
+		// set up keep
+		@if index($key, keep) {
+			$keep: true;
+		}
+
+		// set up last
+		@if index($key, last) {
+			$last: true;
+		}
+
+		// set up move
+		@if index($key, move) {
+			$move: get-next($key, move);
+		}
+
+		// set up column, location and isolate
+		@if index($key, at) {
+			$location: (get-next($key, at) - 1);
+			$column: get-prev($key, at);
+			$isolate: true;
+		} @else if index($key, of) {
+			$column: get-prev($key, of);
+		} @else {
+			@for $i from 1 through length($key) {
+				$val: nth($key, $i);
+
+				@if type-of($val) == number and
+						unitless($val) {
+					$column: $val;
+				}
+			}
+		}
+
+		// set up columns
+		@if index($key, of) {
+			$columns: get-next($key, of);
+		}
+
+		// set up gutter
+		@for $i from 1 through length($key) {
+			$val: nth($key, $i);
+
+			@if type-of($val) == number and
+					not unitless($val) {
+				$gutter: $val;
+			}
+		}
+	}
+
+	// *** output *** //
+  // float
+  @if not $keep { float: $float; }
+
+	// move
+	@if $move { position: relative; }
+
+	// isolate
+	@if $isolate { margin-right: -100%; }
+	
+	// no gutter
+	@if not $gutter or $gutter == 0 {
+	  width: percentage($column / $columns);
+
+	  // move
+	  @if $move and $move != 0 { 
+	  	left: percentage($move / $columns); 
+	  }
+
+	  // location
+	  @if $location and $location != 0 { 
+	  	margin-#{$float}: percentage($location / $columns); 
+	  }
+
+	// flexible gutter
+	} @else if unit($gutter) == '%' {
+		$column-width: ((100% - ($columns - 1) * $gutter) / $columns);
+		width: $column-width * $column + $gutter * ($column - 1);
+
+		@if not $keep and not $last and not $isolate {
+				margin-#{opposite($float)}: $gutter; 
+		}
+
+		// move
+		@if $move and $move != 0 { 
+			left: ($column-width + $gutter) * $move; 
+		}
+
+		// location
+		@if $location and $location != 0 { 
+			margin-#{$float}: ($column-width + $gutter) * $location; 
+		}
+
+	// fixed gutter
+	} @else {
+		width: percentage($column / $columns);
+
+		@if not $keep {
+	    box-sizing: border-box;
+			padding-left: ($gutter / 2);
+			padding-right: ($gutter / 2);
+		}
+
+		// move
+		@if $move and $move != 0 { 
+			left: percentage($move / $columns); 
+		}
+
+		// location
+		@if $location and $location != 0 { 
+			margin-#{$float}: percentage($location / $columns); 
+		}
+	}
+}
+

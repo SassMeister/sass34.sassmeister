@@ -1,0 +1,64 @@
+// *** justify *** //
+
+// for morden browsers
+%justify-flex {
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+
+@mixin justify-flex(){
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+
+// for old browsers
+%justify {
+  text-align: justify;
+  line-height: 0;
+  margin-bottom: -5px;
+  &:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+  > * {
+    line-height: 1;
+    display: inline-block;
+  }
+}
+
+@mixin justify($key){
+  $child:false;
+
+  // set up child
+  @if type-of($key) == string {
+    $child: $key;
+  } @else if type-of($key) == list {
+    @if index($key, child) {
+      $child: get-next($key, child);
+    }
+  }
+
+  text-align: justify;
+  line-height: 0;
+  margin-bottom: -5px;
+  &:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+  @if $child {
+    > #{$child} {
+      line-height: 1;
+      display: inline-block;
+    }
+  }
+  @else {
+    > * {
+      line-height: 1;
+      display: inline-block;
+    }
+  }
+}

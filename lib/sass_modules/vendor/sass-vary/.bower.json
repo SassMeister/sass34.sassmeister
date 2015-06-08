@@ -1,0 +1,27 @@
+{
+  "name": "sass-vary",
+  "main": "_vary.scss",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "**/*.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "theming",
+    "sass",
+    "mixin",
+    "vary",
+    "bem"
+  ],
+  "homepage": "https://github.com/jaicab/sass-vary",
+  "_release": "5190d7b140",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5190d7b1408b2cd2ed9138b35135db34f7189e41"
+  },
+  "_source": "git://github.com/jaicab/sass-vary.git",
+  "_target": "*",
+  "_originalSource": "sass-vary"
+}

@@ -1,0 +1,124 @@
+// *** slider-gallery *** //
+@mixin slider-gallery($key){
+  $items: 1;
+  $ratio: 9/16; 
+  $autoplay: false;
+  $default: false;
+
+  @if type-of($key) == number {
+    $items: $key;
+  } @else if type-of($key) == list {
+    @if index($key, ratio) {
+      $ratio: get-next($key, ratio);
+      $key: reject($key, $ratio);
+    }
+    @if index($key, autoplay) {
+      $autoplay: true;
+    }
+    @if index($key, default) {
+      $default: true;
+    }
+
+    @for $i from 1 through length($key) {
+      $val: nth($key, $i);
+      
+      @if type-of($val) == number {
+        $items: $val;
+      }
+    }
+  }
+
+  $prefix: get-slider-selector(&);
+  $id: "#" + $prefix;
+
+  @at-root (without: media) { // @at-root (without: media) start
+    // base
+    @extend %slide-base; 
+    @extend %slide-fade-base;
+    .outer { padding-bottom: percentage($ratio); }
+
+    // setting items
+    @for $i from 1 through $items {
+      @at-root { 
+        #{$id}-#{$i}:checked ~ {
+          .outer li:nth-child(#{$i}) { 
+            @extend %item-active;
+          }
+        }
+      }
+    }
+
+    // setting controls
+    // default style
+    @if $default { @extend %default-controls; }
+    // show and hide
+    @for $i from 1 through $items {
+      @at-root { 
+        #{$id}-#{$i}:checked ~ {
+          @if $i == 1 {
+            .controls label:nth-child(#{$items}) .prev, 
+            .controls label:nth-child(#{$i + 1}) .next { @extend %show; }
+          }
+          @else if $i == $items {
+            .controls label:nth-child(#{$i - 1}) .prev, 
+            .controls label:nth-child(1) .next { @extend %show; }
+          }
+          @else {
+            .controls label:nth-child(#{$i - 1}) .prev, 
+            .controls label:nth-child(#{$i + 1}) .next { @extend %show; }
+          }
+        }
+      }
+    }
+
+    // setting dots
+    @if $default == true { @extend %default-dots; }
+    @for $i from 1 through $items {
+      @at-root { 
+        #{$id}-#{$i}:checked ~ {
+        .dots label:nth-child(#{$i}) .active { @extend %show; }
+        .dots label:nth-child(#{$i}) .normal { @extend %hide; }
+        }
+      }
+    }
+
+    // setting autoplay
+    @if $autoplay {
+      @if $default {
+        @extend %default-autoplay;
+        @at-root { 
+          #{$id}-autoplay:checked ~ .autoplay { 
+            label:before { content: '1'; } 
+          }
+        }
+      }
+      // animation
+      @include keyframes(#{$prefix}) {
+        0% { @include item-normal; }
+        #{percentage($slider-play / ($slider-peritem * $items))} { @include item-active; }
+        #{percentage($slider-peritem / ($slider-peritem * $items))} { @include item-active; }
+        #{percentage(($slider-play + $slider-peritem) / ($slider-peritem * $items))} { @include item-normal; }
+      }
+      @at-root { 
+        #{$id}-autoplay:checked ~ {
+          .controls, .dots { display: none !important; }
+          .outer li {
+            @include animation( #{$prefix} $slider-peritem * $items ease infinite);
+            @for $i from 2 through $items {
+              &:nth-child(#{$i}) {
+                @include animation-delay(($slider-peritem * ($i - 1)));
+              }
+            }
+          }
+        }
+      }
+      // pause on hover
+      // &:hover {
+      //   #{$id}-autoplay ~ .outer li { 
+      //     @include animation-play-state(paused); 
+      //   }
+      // }
+    }
+
+  } // @at-root (without: media) end
+}

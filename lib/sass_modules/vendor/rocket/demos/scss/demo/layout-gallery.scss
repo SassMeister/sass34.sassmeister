@@ -1,0 +1,11 @@
+@import 'demo-base';
+
+// *** layout: gallery *** //
+
+.example-gallery { @include gallery(4 2% child li); 
+  span {
+    display: block;
+    min-height: 120px;
+    padding: 15px;
+  }
+}

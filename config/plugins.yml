@@ -1,3 +1,31 @@
+sass-maps-plus:
+  :bower: sass-maps-plus
+  :fingerprint: sass-maps-plus
+  :imports: 
+    - sass-maps-plus
+  :paths:
+    - sass-maps-plus
+Rocket:
+  :bower: rocket
+  :fingerprint: rocket
+  :imports:
+    - rocket
+  :paths:
+    - rocket/src/scss  
+Gridle:
+  :bower: gridle
+  :fingerprint: gridle/gridle
+  :imports:
+    - gridle/gridle
+  :paths:
+    - gridle/sass
+Vary:
+  :bower: sass-vary
+  :fingerprint: vary
+  :imports:
+    - vary
+  :paths:
+    - sass-vary
 'Include Media':
   :bower: include-media
   :fingerprint: include-media

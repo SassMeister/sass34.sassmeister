@@ -1,17 +1,9 @@
 @import 'position';
 
-.Example-with-offset {
-  @include absolute(offset 2rem);
+.Example-without-value {
+  @include absolute(top left);
 }
 
-.Example-with-all {
-  @include absolute(offset 2rem);
-}
-
-.Example-with-offset-h {
-  @include absolute(offset-h 2rem);
-}
-
-.Example-with-offset-v {
-  @include absolute(offset-v 2rem);
+.Example-with-value {
+  @include absolute(top 1rem left 2rem);
 }

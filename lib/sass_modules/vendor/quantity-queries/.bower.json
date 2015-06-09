@@ -1,0 +1,20 @@
+{
+  "name": "quantity-queries",
+  "version": "0.3.0",
+  "main": "_quantity-queries.scss",
+  "author": "Daniel Guillan",
+  "ignore": [
+    "*",
+    "!stylesheets/_quantity-queries.scss"
+  ],
+  "homepage": "https://github.com/danielguillan/quantity-queries",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "cd2498bfe8413b4a98529211e22e69e31306199c"
+  },
+  "_source": "git://github.com/danielguillan/quantity-queries.git",
+  "_target": "*",
+  "_originalSource": "danielguillan/quantity-queries"
+}

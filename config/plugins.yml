@@ -1,3 +1,17 @@
+Position:
+  :bower: position
+  :fingerprint: position
+  :imports:
+    - position
+  :paths:
+    - position/sass
+'Quantity Queries':
+  :bower: quantity-queries
+  :fingerprint: quantity-queries
+  :imports:
+    - quantity-queries
+  :paths:
+    - quantity-queries/stylesheets
 sass-maps-plus:
   :bower: sass-maps-plus
   :fingerprint: sass-maps-plus

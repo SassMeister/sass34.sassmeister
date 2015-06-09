@@ -295,6 +295,15 @@ Position:
   - position
   :fingerprint: position
   :homepage: https://github.com/Undistraction/position
+Quantity Queries:
+  :bower: quantity-queries
+  :paths:
+  - quantity-queries/stylesheets
+  :version: 0.3.0
+  :import:
+  - quantity-queries
+  :fingerprint: quantity-queries
+  :homepage: 
 Quotation Marks:
   :gem: quotation-marks
   :version: 0.1.1

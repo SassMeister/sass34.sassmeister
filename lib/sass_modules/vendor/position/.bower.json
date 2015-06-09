@@ -25,6 +25,6 @@
     "commit": "c541c1602b78cbc8831cdab88dcd6d4089c78e71"
   },
   "_source": "git://github.com/Undistraction/position.git",
-  "_target": "~0.2.3",
+  "_target": "~0.2.15",
   "_originalSource": "position"
 }

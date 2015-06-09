@@ -1,0 +1,21 @@
+///
+/// Tests whether `$var` is a negative measure.
+///
+/// @require is-measure
+/// @require is-negative
+/// @require strip-units
+///
+/// @param {*} $var - possible negative measure type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-measure-negative(-10em)   	 //returns true
+///   is-measure-negative(0px)     	 //returns false
+///   is-measure-negative(0)       	 //returns false
+///   is-measure-negative(777rem)    //returns false
+///
+
+@function is-measure-negative($var) {
+	@return is-measure($var) and is-negative(strip-units($var));
+}

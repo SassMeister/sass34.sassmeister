@@ -27,7 +27,7 @@
     "mathsass": "~0.9.3",
     "typecsset": "~0.3.0",
     "typesettings": "~2.0.0",
-    "position": "~0.2.3",
+    "position": "~0.2.15",
     "true": "~2.0.1",
     "sassy-gridlover": ">=0.0.1",
     "juice": ">=0.0.1",
@@ -41,6 +41,7 @@
     "rocket": "~2.0.0",
     "sass-maps-plus": "lunelson/sass-maps-plus",
     "quantity-queries": "danielguillan/quantity-queries",
-    "position": "~0.2.15"
+    "sass-mq": "~3.1.2",
+    "sassy-validation": ">=0.0.1"
   }
 }

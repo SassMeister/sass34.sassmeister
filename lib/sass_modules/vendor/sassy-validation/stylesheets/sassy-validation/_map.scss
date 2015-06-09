@@ -1,0 +1,18 @@
+///
+/// Tests whether `$var` is map.
+///
+/// @param {*} $var - possible map type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-map(a: 1, b: 2)   	  //returns true
+///   is-map(1 2 3)        	  //returns false
+///   is-map((test, test))    //returns false
+///   is-map(test)         	  //returns false
+///   is-map(1)            	  //returns false
+///
+
+@function is-map($var) {
+	@return type-of($var) == 'map';
+}

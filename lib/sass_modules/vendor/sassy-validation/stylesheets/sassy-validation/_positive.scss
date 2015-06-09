@@ -1,0 +1,19 @@
+///
+/// Tests whether `$var` is positive.
+///
+/// @require is-number
+///
+/// @param {*} $var - possible positive type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-positive(1)          //returns true
+///   is-positive(0)          //returns false
+///   is-positive(-1)    	  //returns false
+///   is-positive('hello')    //returns false
+///
+
+@function is-positive($var) {
+    @return is-number($var) and $var > 0;
+}

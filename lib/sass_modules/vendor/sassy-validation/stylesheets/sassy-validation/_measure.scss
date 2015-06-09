@@ -1,0 +1,19 @@
+///
+/// Tests whether `$var` is measure.
+///
+/// @param {*} $var - possible measure type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-measure(1px) 	  //returns true
+///   is-measure(5em)     //returns true
+///   is-measure(5)       //returns false
+///   is-measure(test)    //returns false
+///   is-measure(em)      //returns false
+///
+
+@function is-measure($var) {
+	@return type-of($var) == 'number'
+	and not not index($sv-units, unit($var));
+}

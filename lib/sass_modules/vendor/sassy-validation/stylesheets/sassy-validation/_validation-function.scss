@@ -1,0 +1,37 @@
+///
+/// Validates input against various tests
+///
+/// @param {*} $var - a variable to be tested
+/// @param {bool|color|empty|float|integer|list|map|measure-negative|measure-positive|measure|negative|positive|null|number|string|unit} $validations - list of validation tests to run against `$var`
+///
+/// @return {bool}
+///
+/// @throws '$var is not a known validation type.'
+///
+/// @example
+///   validate(1em, measure)     		// returns true
+///   validate(100, number positive)    // returns true
+///   validate(1, number)        	    // returns true
+///   validate(1, string)        	    // returns false
+///
+
+@function validate($var, $validations) {
+	$all-types: ('bool', 'color', 'empty', 'float', 'integer', 'list', 'map', 'measure', 'measure-positive', 'measure-negative', 'negative', 'null', 'number', 'positive', 'string', 'unit');
+	@if $validations == 'any' {
+		@return true;
+	}
+	//collect validation errors
+	$errors: 0;
+	//check each validation and set 1 for each failure
+	@each $validation in $validations {
+		@if not index($all-types, $validation) {
+			@error '#{$validation} is not a known validation type.';
+		}
+
+		@if not call('is-#{$validation}', $var) {
+			$errors: $errors + 1;
+		}
+	}
+	//throw an error if there are as many validation errors as validation tests because all checked types failed
+	@return $errors < length($validations);
+}

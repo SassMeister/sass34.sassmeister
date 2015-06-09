@@ -1,0 +1,18 @@
+///
+/// Tests whether `$var` is list.
+///
+/// @param {*} $var - possible list type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-list(a b)             //returns true
+///   is-list(1 2 3)           //returns true
+///   is-list((test, test))	   //returns true
+///   is-list(test)            //returns false
+///   is-list(1)               //returns false
+///
+
+@function is-list($var) {
+	@return type-of($var) == 'list';
+}

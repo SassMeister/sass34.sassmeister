@@ -1,0 +1,17 @@
+///
+/// Tests whether `$var` is unit.
+///
+/// @param {*} $value - possible unit type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-unit(rem)    			     //returns true
+///   is-unit(-1000px) 	   			 //returns false
+///   is-unit('sassy-validation')    //returns false
+///   is-unit(777) 		   			 //returns false
+///
+
+@function is-unit($var) {
+	@return not not index($sv-units, $var);
+}

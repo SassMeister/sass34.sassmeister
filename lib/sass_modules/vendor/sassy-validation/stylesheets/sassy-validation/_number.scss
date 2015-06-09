@@ -1,0 +1,17 @@
+///
+/// Tests whether `$var` is number.
+///
+/// @param {*} $var - possible number type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-number(1)   				   //returns true
+///   is-number('1') 	               //returns false
+///   is-number(1em)    			   //returns false
+///   is-number('sassy-validation')    //returns false
+///
+
+@function is-number($var) {
+	@return if(type-of($var) == 'number', unitless($var), false);
+}

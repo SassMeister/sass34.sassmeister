@@ -1,0 +1,16 @@
+///
+/// Tests whether `$var` is string.
+///
+/// @param {*} $var  - possible string type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-string('sassy-validation')    //returns true
+///   is-string(1)    	 			   //returns false
+///   is-string(18px)    	 		   //returns false
+///
+
+@function is-string($var) {
+	@return type-of($var) == 'string';
+}

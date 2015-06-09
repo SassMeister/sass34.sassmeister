@@ -1,0 +1,16 @@
+///
+/// Tests whether `$var` is color.
+///
+/// @param {*} $var - possible color type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-color(#333)     //returns true
+///   is-color(black)    //returns true
+///   is-color(test)     //returns false
+///
+
+@function is-color($var) {
+	@return type-of($var) == 'color';
+}

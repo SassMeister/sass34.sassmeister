@@ -1,0 +1,38 @@
+{
+  "name": "sassy-validation",
+  "version": "0.4.0",
+  "homepage": "https://github.com/SassySuit/sassy-validation",
+  "authors": [
+    "Vova Skok <skok@vova.io>"
+  ],
+  "description": "Sass data type validation library",
+  "main": "stylesheets/_sassy-validation.scss",
+  "keywords": [
+    "Sass",
+    "library",
+    "scss",
+    "sass",
+    "css",
+    "Sassy",
+    "utility",
+    "helper",
+    "validation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.0",
+    "commit": "eb4417fc66b3553d4beea1ab2497e519d0f50c72"
+  },
+  "_source": "git://github.com/SassySuit/sassy-validation.git",
+  "_target": ">=0.0.1",
+  "_originalSource": "sassy-validation"
+}

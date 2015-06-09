@@ -1,3 +1,17 @@
+'Sassy-validation':
+  :bower: sassy-validation
+  :fingerprint: sassy-validation
+  :imports:
+    - sassy-validation
+  :paths:
+    - sassy-validation/stylesheets
+sass-mq:
+  :bower: sass-mq
+  :fingerprint: mq
+  :imports:
+    - mq
+  :paths:
+    - sass-mq
 Position:
   :bower: position
   :fingerprint: position
@@ -15,7 +29,7 @@ Position:
 sass-maps-plus:
   :bower: sass-maps-plus
   :fingerprint: sass-maps-plus
-  :imports: 
+  :imports:
     - sass-maps-plus
   :paths:
     - sass-maps-plus
@@ -25,7 +39,7 @@ Rocket:
   :imports:
     - rocket
   :paths:
-    - rocket/src/scss  
+    - rocket/src/scss
 Gridle:
   :bower: gridle
   :fingerprint: gridle/gridle
@@ -77,7 +91,7 @@ Juice:
     - juice/dist
 Sassy-Math:
   :gem: sassy-math
-  :import: 
+  :import:
     - sassy-math
   :fingerprint: sassy-math
 Sassy-Gridlover:

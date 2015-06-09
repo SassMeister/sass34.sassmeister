@@ -1,0 +1,20 @@
+///
+/// Tests whether `$var` is negative.
+///
+/// @require is-number
+///
+/// @param {*} $value - possible negative type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-negative(-5)        //returns true
+///   is-negative(-10px)     //returns false
+///   is-negative(300)       //returns false
+///   is-negative('test')    //returns false
+///   is-negative(0)         //returns false
+///
+
+@function is-negative($var) {
+	@return is-number($var) and $var < 0;
+}
